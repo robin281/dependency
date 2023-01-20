@@ -1,0 +1,26 @@
+devices:                                                                           
+    Router:                                                                        
+        type: 'router'                                                             
+        alias: 'uut1'                                                              
+        os: ios                                                                    
+      #  tacacs:                                                                   
+           # username: lab                                                         
+        connections:                                                               
+            #defaults:                                                             
+                #class: unicon.Unicon                                              
+            a:                                                                     
+                protocol: telnet                                                   
+                # ip: 10.64.68.131                                                 
+                # port: 3041                                                       
+                ip: 10.64.69.40                                                    
+                port: 7010                                                         
+        #passwords:                                                                
+         #       enable: lab                                                       
+        #        line: lab                                                         
+                                                                                   
+topology:                                                                          
+    Router:                                                                        
+        interfaces:                                                                
+            GigabitEthernet1:                                                      
+                link: link1                                                        
+                type: ethernet 

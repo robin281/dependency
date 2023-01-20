@@ -1,0 +1,1014 @@
+Parent_m:configure, Mode:archive, eol_name: archive_command, which_name: 0, Command: archive
+Parent_m:archive, Mode:log_config, eol_name: log_config_command, which_name: 0, Command: log config
+Parent_m:ipczone, Mode:ipczone-assoc, eol_name: ipc_configure_association, which_name: CFG_IPC_ASSOC_ENTER, Command: association 1
+Parent_m:configure, Mode:ipczone, eol_name: ipc_configure_zone, which_name: CFG_IPC_ZONE_ENTER, Command: ipc zone default
+Parent_m:configure, Mode:RMI-Resource-Manager, eol_name: configure_rmi, which_name: RMI_TOP_LEVEL_ENTER, Command: resource policy
+Parent_m:RMI-Resource-Manager, Mode:RMI-Resource-Policy, eol_name: config_resource_policy, which_name: RMI_RES_POLICY_ENTER, Command: policy str_1_s global
+Parent_m:RMI-Resource-Manager, Mode:RMI-Resource-Group, eol_name: rmi_configure_user_group, which_name: RMI_CFG_USER_GROUP_ENTER, Command: user group task type task
+Parent_m:RMI-Resource-Policy, Mode:RMI-Node-Config, eol_name: rmi_config_policy_for_slot, which_name: RMI_CONFIG_SYSTEM, Command: system
+Parent_m:configure, Mode:redundancy, eol_name: config_redundancy_submode, which_name: 0, Command: redundancy
+Parent_m:redundancy, Mode:Cloud_AWS, eol_name: vxe_cloud_ha_mode_cmd, which_name: 0, Command: cloud provider aws 1
+Parent_m:redundancy, Mode:Cloud_Azure, eol_name: vxe_cloud_ha_mode_cmd, which_name: 0, Command: cloud provider azure 1
+Parent_m:redundancy, Mode:Cloud_Azure_Gov, eol_name: vxe_cloud_ha_mode_cmd, which_name: 0, Command: cloud provider azusgov 1
+Parent_m:redundancy, Mode:main-cpu, eol_name: maincpu_mode_cmd, which_name: 0, Command: main-cpu
+Parent_m:redundancy, Mode:application-redundancy-group, eol_name: app_mode_cmd, which_name: 0, Command: application redundancy
+Parent_m:redundancy, Mode:interchassis, eol_name: red_ic_mode_cmd, which_name: 0, Command: interchassis group 1
+Parent_m:application-redundancy-group, Mode:rg-protocol, eol_name: rg_protocol_mode_cmd, which_name: 0, Command: protocol 1
+Parent_m:application-redundancy-group, Mode:rg-group, eol_name: rg_group_mode_cmd, which_name: 0, Command: group 1
+Parent_m:configure, Mode:event-submode, eol_name: pre_pmap_control_extend_command_eol_func, which_name: 0, Command: policy-map type control subscriber str_1_s
+Parent_m:event-submode, Mode:class-submode, eol_name: pre_pmap_event_sub_command_eol_func, which_name: 0, Command: event authentication-failure
+Parent_m:class-submode, Mode:action-submode, eol_name: pre_pmap_class_sub_command_eol_func, which_name: 0, Command: 1 class always
+Parent_m:configure, Mode:ecfm, eol_name: cfm_parser_cfg_domain, which_name: 0, Command: ethernet cfm domain str_1_s level 0
+Parent_m:ecfm, Mode:ecfm_srv, eol_name: cfm_parser_cfg_domain_service, which_name: 0, Command: service str_1_s evc str_1_s
+Parent_m:configure, Mode:nat64-mape, eol_name: nat64_cfg_command, which_name: NAT64_CFG_MAPE, Command: nat64 map-e domain 1
+Parent_m:configure, Mode:nat64-mapt, eol_name: nat64_cfg_command, which_name: NAT64_CFG_MAPE, Command: nat64 map-t domain 1
+Parent_m:nat64-mapt, Mode:nat64-mapt-bmr, eol_name: nat64_cfg_mapt_sm_command, which_name: NAT64_CFG_MAPT_SM_BMR, Command: basic-mapping-rule 
+Parent_m:configure, Mode:call-home, eol_name: call_home_mode_cmd, which_name: 0, Command: call-home
+Parent_m:call-home, Mode:call-home-snapshot, eol_name: call_home_snapshot_mode_cmd, which_name: 0, Command: alert-group-config snapshot
+Parent_m:call-home, Mode:call-home-profile, eol_name: call_home_profile_mode_cmd, which_name: 0, Command: profile str_1_s
+Parent_m:call-home, Mode:call-home-ds, eol_name: call_home_ds_mode_cmd, which_name: 0, Command: diagnostic-signature
+Parent_m:configure, Mode:config-mdns-svc-peer, eol_name: mdns_sd_svc_peer_grp_command, which_name: 0, Command: mdns-sd service-peer group
+Parent_m:config-mdns-svc-peer, Mode:config-mdns-svc-peer-grp, eol_name: mdns_service_peer_command, which_name: 0, Command: peer-group 1
+Parent_m:configure, Mode:top-af-base, eol_name: topo_base_af_command, which_name: 0, Command: global-address-family ipv4
+Parent_m:top-af-base, Mode:cfg-af-topo, eol_name: topo_config_command, which_name: 0, Command: topology str_1_s
+Parent_m:configure, Mode:policymap-service, eol_name: subscriber_profile_cli_commands, which_name: SUBSCRIBER_PROFILE_CLI, Command: policy-map type service str_1_s
+Parent_m:policymap-service, Mode:policymap-service-default-classmap, eol_name: subscriber_traffic_policymap_classmap_default_command, which_name: 0, Command: 0 class type traffic default in-out
+Parent_m:policymap-service, Mode:policymap-service-classmap, eol_name: subscriber_traffic_policymap_classmap_command, which_name: 0, Command: 0 class type traffic str_1_s
+Parent_m:configure, Mode:vrf, eol_name: vrf_mode_command, which_name: VRF_CLI_VERSION_NEW, Command: vrf definition str_1_s
+Parent_m:vrf, Mode:vrf-af, eol_name: vrf_afi_mode_command, which_name: 0, Command: address-family   ipv4
+Parent_m:vrf-af, Mode:vrf-af-topology, eol_name: topo_config_command, which_name: 0, Command: topology <WORD> 
+Parent_m:configure, Mode:sd-service, eol_name: stile_sd_service_submode_start, which_name: EXEC_NBAR_SD_SERVICE, Command: avc sd-service
+Parent_m:sd-service, Mode:sd-service-controller, eol_name: stile_sd_service_controller_submode_start, which_name: EXEC_NBAR_SD_SERVICE_CONTROLLER, Command: controller
+Parent_m:configure, Mode:bdomain-glob-mode, eol_name: bdomain_glob_cfg_command, which_name: 1, Command: bridge-domain 1
+Parent_m:bdomain-glob-mode, Mode:bdomain-efp-mode, eol_name: bdomain_bd_globalmode_subcommand, which_name: 4, Command: member GigabitEthernet1/0/3 service-instance 1
+Parent_m:configure, Mode:qospolicymap, eol_name: policymap_cmd, which_name: EOL_NVGEN_SUPPORTED | EOL_PRC_SUPPORTED| EOL_MODE_ENTRY, Command: policy-map str_1_s
+Parent_m:qospolicymap, Mode:qospolicymapclass, eol_name: policymap_class_cmd, which_name: 0, Command: class str_1_s
+Parent_m:configure, Mode:dhcp, eol_name: dhcpd_pool_command, which_name: 0, Command: ip dhcp pool str_1_s
+Parent_m:dhcp, Mode:dhcp-pool-class, eol_name: dhcpd_pool_subcommand, which_name: DHCPD_POOL_CLASS_NAME, Command: class str_1_s
+Parent_m:dhcp, Mode:dhcp-subnet-secondary, eol_name: dhcpd_pool_subcommand, which_name: DHCPD_POOL_NETWORK, Command: network 1.1.1.1 255.255.255.0 secondary
+Parent_m:configure, Mode:dhcp-class, eol_name: dhcpd_class_command, which_name: 0, Command: ip dhcp class str_1_s
+Parent_m:dhcp-class, Mode:dhcp-relay-info, eol_name: dhcpd_class_subcommand, which_name: DHCPD_CLASS_RELAY_INFO, Command: relay agent information
+Parent_m:configure, Mode:evpn-evi, eol_name: evpn_instance_command, which_name: 0, Command: l2vpn evpn instance 1 point-to-point
+Parent_m:evpn-evi, Mode:evpn-vpws, eol_name: evpn_vpws_context_command, which_name: 0, Command: vpws context str_1_s
+Parent_m:configure, Mode:router_eigrp_named, eol_name: eigrp_rm_configure_named_eols, which_name: EIGRP_CFG_ROUTER_CMD, Command: router eigrp str_1_s
+Parent_m:router_eigrp_named, Mode:eigrp_af_submode, eol_name: eigrp_family_cfg_submode_eols, which_name: EIGRP_CFG_FAMILY_CMD, Command: address-family ipv4 asystem 1
+Parent_m:router_eigrp_named, Mode:eigrp_sf_submode, eol_name: eigrp_family_cfg_submode_eols, which_name: EIGRP_CFG_FAMILY_CMD, Command: service-family ipv4 asystem 1
+Parent_m:eigrp_af_submode, Mode:eigrp_af_intf_submode, eol_name: eigrp_family_intf_submode_eols, which_name: EIGRP_AF_INTF_CMD, Command: af-interface GigabitEthernet1/0/3 
+Parent_m:eigrp_af_submode, Mode:eigrp_af_topo_submode, eol_name: eigrp_topo_submode_eols, which_name: EIGRP_CFG_TOPO_SUBMODE_CMD, Command: topology base
+Parent_m:eigrp_af_topo_submode, Mode:eigrp_topo_intf_submode, eol_name: eigrp_topo_intf_submode_eols, which_name: EIGRP_TOPO_INTF_CMD, Command: topo-interface GigabitEthernet1/0/3 
+Parent_m:eigrp_sf_submode, Mode:eigrp_sf_intf_submode, eol_name: eigrp_family_intf_submode_eols, which_name: EIGRP_SF_INTF_CMD, Command: sf-interface GigabitEthernet1/0/3 
+Parent_m:eigrp_sf_submode, Mode:eigrp_sf_topo_submode, eol_name: eigrp_topo_submode_eols, which_name: EIGRP_CFG_TOPO_SUBMODE_CMD, Command: topology base
+Parent_m:configure, Mode:router_eigrp_classic, eol_name: eigrp_rm_configure_classic_eols, which_name: EIGRP_CFG_ROUTER_CMD, Command: router eigrp 16384
+Parent_m:router_eigrp_classic, Mode:eigrp_af_classic_submode, eol_name: eigrp_family_cfg_submode_eols, which_name: EIGRP_CLASSIC_FAMILY_CMD, Command: address-family ipv4 unicast vrf str_1_s
+Parent_m:configure, Mode:sr_xmcp_listen_cfg, eol_name: sr_xmcp_listen_eols, which_name: SR_CFG_XMCP_LISTEN_CMD, Command: service-routing xmcp listen
+Parent_m:sr_xmcp_listen_cfg, Mode:sr_xmcp_listen_client_cfg, eol_name: sr_xmcp_cmds_eols, which_name: SR_CFG_XMCP_CLIENT_USER_CMD, Command: client username str_2_s password 6 str_1_s
+Parent_m:configure, Mode:dns-view-list, eol_name: dns_viewlist_command, which_name: 0, Command: ip dns view-list str_1_s
+Parent_m:dns-view-list, Mode:dns-view-list-member, eol_name: dns_viewlist_subcommand, which_name: 0, Command: view str_1_s 1
+Parent_m:configure, Mode:ipv6dhcp, eol_name: ipv6_dhcp_mode_command, which_name: 0, Command: ipv6 dhcp pool str_1_s
+Parent_m:ipv6dhcp, Mode:ipv6dhcpvs, eol_name: ipv6_dhcp_vendor_specific_command, which_name: 0, Command: vendor-specific 1
+Parent_m:configure, Mode:vpdn-group, eol_name: l2x_group_entry_command, which_name: VPDN_GROUP, Command: vpdn-group str_1_s
+Parent_m:vpdn-group, Mode:accept-dialin, eol_name: l2x_group_sub_entry_command, which_name: L2X_ACC_IN, Command: accept-dialin
+Parent_m:configure, Mode:ssh-pubkey, eol_name: ssh_command, which_name: IP_SSH_PUBKEY_CHAIN, Command: ip ssh pubkey-chain
+Parent_m:ssh-pubkey, Mode:ssh-pubkey-user, eol_name: ssh_pubkey_command, which_name: PARSER_SSH_PUBKEY_USER, Command: username str_1_s
+Parent_m:configure, Mode:ssh-server-cert-profile, eol_name: ssh_command, which_name: SSH_CFG_CMD_SCERT_PROFILE, Command: ip ssh server certificate profile
+Parent_m:ssh-server-cert-profile, Mode:ssh-server-cert-profile-server, eol_name: ssh_scert_profile_mode_cmd, which_name: SSH_CFG_CMD_SCERT_PROFILE_MODE, Command: server
+Parent_m:ssh-server-cert-profile, Mode:ssh-server-cert-profile-user, eol_name: ssh_scert_profile_mode_cmd, which_name: SSH_CFG_CMD_SCERT_PROFILE_MODE, Command: user
+Parent_m:configure, Mode:OFA_config, eol_name: ofa_config_mode, which_name: 0, Command: opflex agent
+Parent_m:OFA_config, Mode:OFA_Domain_config, eol_name: ofa_domain_config_mode, which_name: 0, Command: domain str_1_s
+Parent_m:OFA_config, Mode:VXLAN-EVPN_config, eol_name: ofa_sve_config_mode, which_name: 0, Command: service vxlan-evpn
+Parent_m:configure, Mode:dynupd-method, eol_name: dynupd_method_mode_command, which_name: 0, Command: ip ddns update method str_1_s
+Parent_m:dynupd-method, Mode:dynupd-http, eol_name: dynupd_http_mode_command, which_name: 0, Command: HTTP
+Parent_m:configure, Mode:key-chain, eol_name: key_command, which_name: KEY_CHAIN, Command: key chain str_1_s
+Parent_m:configure, Mode:key-chain-macsec, eol_name: key_command, which_name: KEY_CHAIN, Command: key chain str_1_s macsec
+Parent_m:configure, Mode:key-chain-tcp, eol_name: key_command, which_name: KEY_CHAIN, Command: key chain str_1_s tcp
+Parent_m:key-chain, Mode:key-chain-key, eol_name: key_chain_command, which_name: KEY_ID, Command: key 0
+Parent_m:key-chain-macsec, Mode:key-chain-macsec-key, eol_name: key_chain_command, which_name: KEY_ID_HEX, Command: key AB
+Parent_m:key-chain-tcp, Mode:key-chain-tcp-key, eol_name: key_chain_command, which_name: KEY_ID, Command: key 0
+Parent_m:configure, Mode:config-onep-mode, eol_name: cfg_onep_command, which_name: 0, Command: onep
+Parent_m:config-onep-mode, Mode:config-onep-tls-mode, eol_name: cfg_onep_tls_mode_enter_command, which_name: 0, Command: tls
+Parent_m:configure, Mode:radius-da-locsvr, eol_name: aaa_command, which_name: PARSER_AAA_LOCSVR, Command: aaa server radius dynamic-author
+Parent_m:configure, Mode:radius-policy-device-locsvr, eol_name: aaa_command, which_name: PARSER_AAA_LOCSVR, Command: aaa server radius policy-device
+Parent_m:configure, Mode:radius-proxy-locsvr, eol_name: aaa_command, which_name: PARSER_AAA_LOCSVR, Command: aaa server radius proxy
+Parent_m:configure, Mode:radius-sesm-locsvr, eol_name: aaa_command, which_name: PARSER_AAA_LOCSVR, Command: aaa server radius sesm
+Parent_m:radius-proxy-locsvr, Mode:radius-locsvr-client, eol_name: radius_locsvr_command, which_name: PARSER_RADIUS_PROXY_LOCSVR_CLIENT, Command: client 1.1.1.1
+Parent_m:configure, Mode:crypto-tti-registrar, eol_name: crypto_wui_tti, which_name: PARSER_CRYPTO_TTI_REGISTRAR, Command: crypto provisioning registrar
+Parent_m:crypto-tti-registrar, Mode:registrar-url-profile, eol_name: crypto_tti_command, which_name: PARSER_CRYPTO_TTI_URL_PROF, Command: url-profile intro str_1_s
+Parent_m:configure, Mode:template, eol_name: template_entry_command, which_name: 1, Command: template str_1_s
+Parent_m:template, Mode:template-manual, eol_name: cts_int_command, which_name: CFG_INT_CTS_MANUAL, Command: cts manual
+Parent_m:configure, Mode:public-key-chain, eol_name: crypto_pubkey_chain_command, which_name: PARSER_CRYPTO_ENGINE_PUBKEY_CHAIN_RSA, Command: crypto key pubkey-chain rsa
+Parent_m:public-key-chain, Mode:public-key-chain-key, eol_name: crypto_pubkey_chain_key_command, which_name: 0, Command: addressed-key 1.1.1.1
+Parent_m:configure, Mode:FlowSpec, eol_name: fs_cfg_command, which_name: 0, Command: flowspec
+Parent_m:FlowSpec, Mode:FlowSpec-vrf, eol_name: fs_cfg_submode_command, which_name: FS_CFG_TBL_VRF, Command: vrf str_1_s
+Parent_m:FlowSpec, Mode:FlowSpec-afi, eol_name: fs_cfg_submode_command, which_name: FS_CFG_TBL_AFI, Command: address-family ipv4
+Parent_m:FlowSpec-vrf, Mode:FlowSpec-vrf-afi, eol_name: fs_cfg_submode_command, which_name: FS_CFG_TBL_VRF_AFI, Command: address-family ipv4
+Parent_m:configure, Mode:mon-sess-type-erspan-dst, eol_name: cfg_mon_sess_type_erspan_dst_cmd_ngwc, which_name: 0, Command: monitor session 1 type erspan-destination
+Parent_m:configure, Mode:cfg-bs-dg, eol_name: bs_dg_cmd, which_name: 0, Command: bulkstat data-group str_1_s
+Parent_m:cfg-bs-dg, Mode:cfg-bs-dg-proc, eol_name: bs_dg_process_cmd, which_name: 0, Command: process
+Parent_m:cfg-bs-dg-proc, Mode:cfg-bs-dg-proc-obj, eol_name: bs_dg_proc_obj_cmd, which_name: 0, Command: object str_1_s sample absolute
+Parent_m:configure, Mode:event-trigger, eol_name: configure_eventmib, which_name: SNMP_EVENT_TRIGGER, Command: snmp mib event trigger owner str_1_s name str_1_s
+Parent_m:event-trigger, Mode:event-trigger-threshold, eol_name: configure_trigger_params, which_name: SNMP_EVENT_TRIGGER_TEST_THRESHOLD, Command: test threshold
+Parent_m:event-trigger, Mode:event-trigger-boolean, eol_name: configure_trigger_params, which_name: SNMP_EVENT_TRIGGER_TEST_BOOLEAN, Command: test boolean
+Parent_m:event-trigger, Mode:event-trigger-existence, eol_name: configure_trigger_params, which_name: SNMP_EVENT_TRIGGER_TEST_EXISTENCE, Command: test existence
+Parent_m:configure, Mode:event, eol_name: configure_eventmib, which_name: SNMP_EVENT_ENTRY, Command: snmp mib event owner str_1_s name str_1_s
+Parent_m:event, Mode:event-action-set, eol_name: configure_event_params, which_name: SNMP_EVENT_ACTION_SET, Command: action set
+Parent_m:event, Mode:event-action-notification, eol_name: configure_event_params, which_name: SNMP_EVENT_ACTION_NOTIFICATION, Command: action notification
+Parent_m:configure, Mode:expr-expression, eol_name: expr_command, which_name: 0, Command: snmp mib expression owner str_1_s name str_1_s
+Parent_m:expr-expression, Mode:expr-object, eol_name: expression_submode_command, which_name: SNMP_EXPR_OBJECT, Command: object 1
+Parent_m:configure, Mode:virtual-service, eol_name: mcprp_appliance_cmd, which_name: 0, Command: virtual-service str_1_s
+Parent_m:configure, Mode:ip-sla, eol_name: slaConfigCommand, which_name: 0, Command: ip sla 1
+Parent_m:ip-sla, Mode:ip-sla-https, eol_name: slaHttpsConfigTypeCommand, which_name: 0, Command: http secure get http:/parent_child.txt  
+Parent_m:ip-sla, Mode:ip-sla-http, eol_name: slaHttpConfigTypeCommand, which_name: 0, Command: http get http:/parent_child.txt  
+Parent_m:ip-sla, Mode:ip-sla-ftp, eol_name: slaFtpConfigTypeCommand, which_name: 0, Command: ftp get ftp://sandredd@64.103.220.222://nobackup/sandredd/vwlc_image/ 
+Parent_m:ip-sla, Mode:ip-sla-udpEcho, eol_name: slaUdpConfigTypeCommand, which_name: 0, Command: udp-echo 1.1.1.1 0
+Parent_m:ip-sla, Mode:ip-sla-udpJitter, eol_name: slaMcastConfigTypeCommand, which_name: 0, Command: udp-jitter 1.1.1.1 1
+Parent_m:ip-sla, Mode:ip-sla-icmpEcho, eol_name: slaEchoConfigTypeCommand, which_name: 0, Command: icmp-echo 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-icmpJitter, eol_name: slaIcmpJitterConfigTypeCommand, which_name: 0, Command: icmp-jitter 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-dhcp, eol_name: slaDhcpConfigTypeCommand, which_name: 0, Command: dhcp 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-tcp, eol_name: slaTcpConnectConfigTypeCommand, which_name: 0, Command: tcp-connect 1.1.1.1 0
+Parent_m:ip-sla, Mode:ip-sla-dns, eol_name: slaDnsConfigTypeCommand, which_name: 0, Command: dns str_1_s name-server 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-pathEcho, eol_name: slaPathEchoConfigTypeCommand, which_name: 0, Command: path-echo 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-pathJitter, eol_name: slaPathJitterConfigTypeCommand, which_name: 0, Command: path-jitter 1.1.1.1
+Parent_m:ip-sla, Mode:ip-sla-y1731-loss, eol_name: slaY1731LossCommand, which_name: 0, Command: ethernet y1731 loss LMM domain str_1_s evc str_1_s mac-address 1.1.1 cos 0 source mac-address 1.1.1
+Parent_m:ip-sla, Mode:ip-sla-ethernet-echo, eol_name: slaEthernetConfigTypeCommand, which_name: 0, Command: ethernet echo mpid 1 domain str_1_s evc str_1_s
+Parent_m:configure, Mode:ip-sla-tplt-dest, eol_name: slaTpltTypeCommand, which_name: 0, Command: ip sla endpoint-list type ip str_1_s
+Parent_m:ip-sla-tplt-dest, Mode:ip-sla-tplt-dest-disc, eol_name: slaTpltSubmodeCommand, which_name: slaTagDestIpAuto, Command: discover
+Parent_m:configure, Mode:ip-sla-ethernet-monitor, eol_name: slaAutoEthernetConfigCommand, which_name: 0, Command: ip sla ethernet-monitor 1
+Parent_m:ip-sla-ethernet-monitor, Mode:ip-sla-ethernet-monitor-params, eol_name: slaAutoEthernetCommonConfigCommand, which_name: slaTagMax, Command: type jitter domain str_1_s vlan 1
+Parent_m:configure, Mode:fh_applet, eol_name: fh_applet_cmd, which_name: 0, Command: event manager applet str_1_s
+Parent_m:configure, Mode:interface, eol_name: interface_command, which_name: 0, Command: interface GigabitEthernet1/0/3
+Parent_m:interface, Mode:tunnel-tp-working, eol_name: mpls_tp_interface_working_cmd, which_name: MPLS_TP_INTF_WORKING_TOP, Command: get_from_mode_cmds 
+Parent_m:interface, Mode:tunnel-tp-protect, eol_name: mpls_tp_interface_protect_cmd, which_name: MPLS_TP_INTF_PROTECT_TOP, Command: get_from_mode_cmds 
+Parent_m:interface, Mode:if-sr-ipv6, eol_name: ipv6_address_command, which_name: IPV6_INT_CMD_ADDR, Command: ipv6 address 1:1:1:1::1/64 segment-routing
+Parent_m:interface, Mode:interface-location-geo-config, eol_name: lim_config_intf_location_id_cmd, which_name: LIM_GEO_IDENTIFIER, Command: location geo-location-id none port-location
+Parent_m:interface, Mode:interface-location-custom-config, eol_name: lim_config_intf_location_id_cmd, which_name: LIM_CUSTOM_IDENTIFIER, Command: location custom-location-id none port-location
+Parent_m:interface, Mode:interface-location-civic-config, eol_name: lim_config_intf_location_id_cmd, which_name: LIM_CIVIC_IDENTIFIER, Command: location civic-location-id none port-location
+Parent_m:interface, Mode:lw-vlan-id, eol_name: lw_vlan_cfg_cmd, which_name: 4, Command: vlan-id dot1q 1
+Parent_m:interface, Mode:lw-vlan-range, eol_name: lw_vlan_cfg_cmd, which_name: 1, Command: vlan-range dot1q 1024 1025
+Parent_m:interface, Mode:rsvp-local-if-policy, eol_name: rsvp_policy_provider_cfg_cmd, which_name: RSVP_POLICY_SOURCE_LOCAL | RSVP_POLICY_LOCAL_MODE_ENTER_CMD, Command: ip rsvp policy local acl 1
+Parent_m:interface, Mode:if-topo, eol_name: topo_intf_command, which_name: 0, Command: topology ipv4   unicast base
+Parent_m:interface, Mode:manual, eol_name: cts_int_command, which_name: CFG_INT_CTS_MANUAL, Command: cts manual
+Parent_m:interface, Mode:if-vnet, eol_name: vrf_vnet_mode_enter, which_name: 0, Command: vnet global
+Parent_m:nat64-mape, Mode:nat64-mape-bmr, eol_name: nat64_cfg_mapt_sm_command, which_name: NAT64_CFG_MAPT_SM_BMR, Command: basic-mapping-rule 
+Parent_m:mon-sess-type-erspan-dst, Mode:mon-sess-type-erspan-dst-src, eol_name: cfg_mon_sess_type_erspan_dst_src_cmd, which_name: 0, Command: source
+Parent_m:ip-sla, Mode:ip-sla-ethernet-jitter, eol_name: slaEthernetConfigTypeCommand, which_name: 0, Command:  ethernet jitter mpid 1 domain str_1_s evc str_1_s 
+Parent_m:vpdn-group, Mode:request-dialin, eol_name: l2x_group_sub_entry_command, which_name: L2X_REQ_IN, Command:  request-dialin 
+Parent_m:fh_applet, Mode:fh_applet_trigger, eol_name: fh_applet_trigger_cmd, which_name: FH_APPLET_TRIGGER, Command:  trigger 
+Parent_m:interface, Mode:config-service-instance, eol_name: ether_efpmode_commands, which_name: 1, Command:  service instance 1 ethernet 
+Parent_m:config-service-instance, Mode:ecfm_mep_efp, eol_name: cfm_parser_cfg_efp_mep, which_name: 0, Command: get_cmds_from_mode  
+Parent_m:config-service-instance, Mode:ecfm_ll_efp, eol_name: cfm_parser_cfg_efp_ll, which_name: 0, Command: get_cmds_from_mode  
+Parent_m:config-service-instance, Mode:xconnect-vc-config, eol_name: not_found_in_config-service-instance_dumper_file, which_name: 0, Command: get_cmds_from_mode  
+Parent_m:xconnect-vc-config, Mode:xconnect-vc-backup-config, eol_name: xconnect_submode_config_command, which_name: XCONNECT_BACKUP_PEER, Command: get_cmds_from_mode  
+Parent_m:interface, Mode:ecfm_mep_int, eol_name: cfm_parser_cfg_port_mep, which_name: 0, Command:  ethernet cfm mep domain str_1_s mpid 1 port 
+Parent_m:interface, Mode:config-if-mdns-sd, eol_name: mdns_gateway_vlan_intf_command, which_name: 0, Command:  mdns-sd gateway 
+Parent_m:interface, Mode:ip-subscriber, eol_name: ip_subscriber_command, which_name: 0, Command:  ip subscriber l2-connected 
+Parent_m:configure, Mode:appfw-policy, eol_name: appfw_policy_command, which_name: 0, Command: appfw policy-name str_1_s
+Parent_m:appfw-policy, Mode:appfw-application-msnmsgr, eol_name: appfw_policy_subcommand, which_name: APPFW_POLICY_MSNMSGR, Command: application im msn
+Parent_m:appfw-policy, Mode:appfw-application-ymsgr, eol_name: appfw_policy_subcommand, which_name: APPFW_POLICY_YMSGR, Command: application im yahoo
+Parent_m:appfw-policy, Mode:appfw-application-aim, eol_name: appfw_policy_subcommand, which_name: APPFW_POLICY_AIM, Command: application im aol
+Parent_m:appfw-policy, Mode:application-http, eol_name: appfw_policy_subcommand, which_name: APPFW_POLICY_HTTP, Command: application http
+Parent_m:configure, Mode:tp-lsp, eol_name: mpls_tp_lsp_submode_config, which_name: MPLS_TP_LSP_SUBMODE_CFG_TOP, Command:  mpls tp lsp source 1.1.1.1 global-id 0 tunnel-tp 0 lsp 2 destination 1.1.1.1 global-id 0 tunnel-tp 0 
+Parent_m:tp-lsp, Mode:forward-lsp, eol_name: mpls_tp_lsp_fwdlsp_submode_config, which_name: MPLS_TP_LSP_FWDLSP_SUBMODE_CFG_TOP, Command:  forward-lsp 
+Parent_m:tp-lsp, Mode:reverse-lsp, eol_name: mpls_tp_lsp_revlsp_submode_config, which_name: MPLS_TP_LSP_REVLSP_SUBMODE_CFG_TOP, Command:  reverse-lsp 
+Parent_m:configure, Mode:srte, eol_name: sr_te_cfg_set_mode, which_name: 0, Command:  segment-routing traffic-eng 
+Parent_m:srte, Mode:srte-if, eol_name: sr_interface_cfg_set_mode, which_name: 0, Command:  interface GigabitEthernet1/0/3
+Parent_m:srte, Mode:srte-ep, eol_name: sr_te_ep_cfg_set_mode, which_name: 0, Command:  segment-list name str_1_s 
+Parent_m:srte, Mode:srte-policy, eol_name: sr_policy_cfg_set_mode, which_name: 0, Command:  policy str_1_s 
+Parent_m:srte, Mode:srte-on-demand-color, eol_name: sr_on_demand_colour_cfg_set_mode, which_name: 0, Command:  on-demand color 1 
+Parent_m:srte, Mode:srte-pcc, eol_name: sr_te_pcc_cfg_remove, which_name: 0, Command:  pcc 
+Parent_m:srte, Mode:srte-af, eol_name: sr_affinity_map_cfg_set, which_name: 0, Command:  affinity-map 
+Parent_m:srte-policy, Mode:srte-policy-autoroute, eol_name: sr_policy_cfg_set_autoroute, which_name: 0, Command:  autoroute 
+Parent_m:srte-policy, Mode:srte-policy-steering, eol_name: sr_te_cfg_steering, which_name: 0, Command: steering 
+Parent_m:srte-policy, Mode:srte-policy-path, eol_name: sr_path_cfg_set_mode, which_name: 0, Command:  candidate-paths 
+Parent_m:srte-policy, Mode:srte-policy-pm, eol_name: sr_te_cfg_perf_meas, which_name: 0, Command: performance-measurement 
+Parent_m:srte-policy-pm, Mode:srte-policy-pm-dm, eol_name: sr_te_pm_cfg_delay_meas, which_name: 0, Command: delay-measurement 
+Parent_m:srte-policy-pm-dm, Mode:srte-policy-pm-dm-liv, eol_name: sr_te_pm_cfg_dm_liv, which_name: 0, Command: liveness-detection 
+Parent_m:srte-policy-pm-dm, Mode:srte-policy-pm-dm-revp, eol_name: sr_te_pm_cfg_dm_revp, which_name: 0, Command: reverse-path 
+Parent_m:srte-policy-path, Mode:srte-policy-path-pref, eol_name: sr_path_index_cfg_set_mode, which_name: 0, Command:  preference 1 
+Parent_m:srte-policy-path-pref, Mode:srte-policy-path-pref-dyn, eol_name: sr_path_index_cfg_mode_set_dynamic, which_name: 0, Command:  dynamic 
+Parent_m:srte-policy-path-pref, Mode:srte-policy-path-pref-constr, eol_name: sr_path_cfg_set_constraints, which_name: 0, Command:  constraints 
+Parent_m:srte-policy-path-pref, Mode:srte-policy-path-pref-pfp, eol_name: sr_pfp_cfg_set_mode, which_name: 0, Command:  per-flow 
+Parent_m:srte-policy-path-pref-constr, Mode:srte-policy-path-pref-constr-seg, eol_name: sr_path_cfg_set_constraints_segments, which_name: 0, Command:  segments 
+Parent_m:srte-policy-path-pref-constr, Mode:srte-policy-path-pref-constr-aff, eol_name: sr_path_cfg_set_constraints_affinity, which_name: 0, Command:  affinity 
+Parent_m:srte-policy-path-pref-constr, Mode:srte-policy-path-pref-constr-asso, eol_name: sr_path_cfg_set_constraints_assoc, which_name: 0, Command:  association-group 
+Parent_m:srte-policy-path-pref-constr-aff, Mode:srte-policy-path-pref-constr-aff-excl-any, eol_name: sr_path_cfg_set_constraints_affinity_excl_any_attrs, which_name: 0, Command:  exclude-any 
+Parent_m:srte-policy-path-pref-constr-aff, Mode:srte-policy-path-pref-constr-aff-inc-any, eol_name: sr_path_cfg_set_constraints_affinity_incl_any_attrs, which_name: 0, Command:  include-any 
+Parent_m:srte-policy-path-pref-constr-aff, Mode:srte-policy-path-pref-constr-aff-inc-all, eol_name: sr_path_cfg_set_constraints_affinity_incl_all_attrs, which_name: 0, Command:  include-all 
+Parent_m:srte-policy-path-pref-dyn, Mode:srte-policy-path-pref-dyn-metric, eol_name: sr_path_index_cfg_mode_set_dynamic_metric, which_name: 0, Command:  metric 
+Parent_m:srte-policy-path-pref-dyn-metric, Mode:srte-policy-path-pref-dyn-metric-margin, eol_name: sr_path_index_cfg_mode_set_dynamic_metric_margin, which_name: 0, Command:  margin 
+Parent_m:srte-if, Mode:srte-if-aff, eol_name: sr_intf_affinity_cfg_set_mode, which_name: 0, Command:  affinity 
+Parent_m:srte-on-demand-color, Mode:srte-odn-steering, eol_name: sr_te_cfg_steering, which_name: 0, Command: steering 
+Parent_m:srte-on-demand-color, Mode:srte-odn-path, eol_name: sr_path_cfg_set_mode, which_name: 0, Command:  candidate-paths 
+Parent_m:srte-on-demand-color, Mode:srte-odn-pm, eol_name: sr_te_cfg_perf_meas, which_name: 0, Command: performance-measurement 
+Parent_m:srte-on-demand-color, Mode:srte-odn-restrict, eol_name: sr_on_demand_colour_set_restrict, which_name: 0, Command: authorize restrict 
+Parent_m:srte-odn-pm, Mode:srte-odn-pm-dm, eol_name: sr_te_pm_cfg_delay_meas, which_name: 0, Command: delay-measurement 
+Parent_m:srte-odn-pm-dm, Mode:srte-odn-pm-dm-liv, eol_name: sr_te_pm_cfg_dm_liv, which_name: 0, Command: liveness-detection 
+Parent_m:srte-odn-pm-dm, Mode:srte-odn-pm-dm-revp, eol_name: sr_te_pm_cfg_dm_revp, which_name: 0, Command: reverse-path 
+Parent_m:srte-odn-path, Mode:srte-odn-path-pref, eol_name: sr_path_index_cfg_set_mode, which_name: 0, Command:  preference 1 
+Parent_m:srte-odn-path-pref, Mode:srte-odn-path-pref-dyn, eol_name: sr_path_index_cfg_mode_set_dynamic, which_name: 0, Command:  dynamic 
+Parent_m:srte-odn-path-pref, Mode:srte-odn-path-pref-constr, eol_name: sr_path_cfg_set_constraints, which_name: 0, Command:  constraints 
+Parent_m:srte-odn-path-pref, Mode:srte-odn-path-pref-pfp, eol_name: sr_pfp_cfg_set_mode, which_name: 0, Command:  per-flow 
+Parent_m:srte-odn-path-pref-constr, Mode:srte-odn-path-pref-constr-seg, eol_name: sr_path_cfg_set_constraints_segments, which_name: 0, Command:  segments 
+Parent_m:srte-odn-path-pref-constr, Mode:srte-odn-path-pref-constr-aff, eol_name: sr_path_cfg_set_constraints_affinity, which_name: 0, Command:  affinity 
+Parent_m:srte-odn-path-pref-constr, Mode:srte-odn-path-pref-constr-asso, eol_name: sr_path_cfg_set_constraints_assoc, which_name: 0, Command:  association-group 
+Parent_m:srte-odn-path-pref-constr-aff, Mode:srte-odn-path-pref-constr-aff-excl-any, eol_name: sr_path_cfg_set_constraints_affinity_excl_any_attrs, which_name: 0, Command:  exclude-any 
+Parent_m:srte-odn-path-pref-constr-aff, Mode:srte-odn-path-pref-constr-aff-inc-any, eol_name: sr_path_cfg_set_constraints_affinity_incl_any_attrs, which_name: 0, Command:  include-any 
+Parent_m:srte-odn-path-pref-constr-aff, Mode:srte-odn-path-pref-constr-aff-inc-all, eol_name: sr_path_cfg_set_constraints_affinity_incl_all_attrs, which_name: 0, Command:  include-all 
+Parent_m:srte-odn-path-pref-dyn, Mode:srte-odn-path-pref-dyn-metric, eol_name: sr_path_index_cfg_mode_set_dynamic_metric, which_name: 0, Command:  metric 
+Parent_m:srte-odn-path-pref-dyn-metric, Mode:srte-odn-path-pref-dyn-metric-margin, eol_name: sr_path_index_cfg_mode_set_dynamic_metric_margin, which_name: 0, Command:  margin 
+Parent_m:srte-pcc, Mode:srte-pcc-profile, eol_name: sr_te_pcc_profile_cfg_set, which_name: 0, Command:  profile 1 
+Parent_m:srte-pcc-profile, Mode:srte-pcc-profile-autoroute, eol_name: sr_te_pcc_profile_autoroute_cfg_set, which_name: 0, Command:  autoroute 
+Parent_m:srte-pcc-profile, Mode:srte-pcc-profile-steering, eol_name: sr_te_pcc_profile_steering_cfg_set, which_name: 0, Command:  steering 
+Parent_m:srte-pcc-profile, Mode:srte-pcc-prof-pm, eol_name: sr_te_cfg_perf_meas, which_name: 0, Command: performance-measurement 
+Parent_m:srte-pcc-prof-pm, Mode:srte-pcc-prof-pm-dm, eol_name: sr_te_pm_cfg_delay_meas, which_name: 0, Command: delay-measurement 
+Parent_m:srte-pcc-prof-pm-dm, Mode:srte-pcc-prof-pm-dm-liv, eol_name: sr_te_pm_cfg_dm_liv, which_name: 0, Command: liveness-detection 
+Parent_m:srte-pcc-prof-pm-dm, Mode:srte-pcc-prof-pm-dm-revp, eol_name: sr_te_pm_cfg_dm_revp, which_name: 0, Command: reverse-path 
+Parent_m:configure, Mode:dapr_instance, eol_name: dapr_instance_cfg_entry_command, which_name: DAPR_INSTANCE_SUBMODE, Command:  dapr str_1_s 
+Parent_m:dapr_instance, Mode:dapr_br, eol_name: dapr_br_cfg_command, which_name: DAPR_BR_CFG_INSTANCE, Command:  border-router 
+Parent_m:dapr_instance, Mode:dapr_rm, eol_name: dapr_rm_cfg_command, which_name: DAPR_RM_CFG_INSTANCE, Command:  route-manager 
+Parent_m:dapr_rm, Mode:dapr_rm_link_threshold, eol_name: dapr_rm_cfg_command, which_name: DAPR_RM_CFG_LINK_THRESHOLD_SUBMODE, Command:  doesnt_matter 
+Parent_m:dapr_rm, Mode:dapr_rm_class, eol_name: dapr_rm_cfg_command, which_name: DAPR_RM_CFG_CLASS_SUBMODE, Command:  dont-bother 
+Parent_m:dapr_rm, Mode:dapr_rm_br_adm, eol_name: dapr_rm_cfg_command, which_name: DAPR_RM_CFG_BR_ADMISSION_SUBMODE, Command:  anything-fine 
+Parent_m:configure, Mode:lisp-top, eol_name: router_command, which_name: 0, Command:  router    lisp    0  
+Parent_m:configure, Mode:parameter_map_cfg, eol_name: c3pl_param_map_conf_command, which_name: 0, Command:  parameter-map type opendns global 
+Parent_m:configure, Mode:l2, eol_name: vfi_command, which_name: 0, Command:  l2 vfi str_1_s point-to-point 
+Parent_m:configure, Mode:l2vpn-vfi, eol_name: l2vpn_vfi_command, which_name: 0, Command:  l2vpn vfi context str_1_s 
+Parent_m:l2vpn-vfi, Mode:l2vpn-vfi-autodiscovery, eol_name: l2vpn_vfi_autodiscovery_command, which_name: 0, Command:  autodiscovery bgp signaling ldp 
+Parent_m:configure, Mode:l2vpn, eol_name: xconnect_l2vpn_global_command, which_name: 0, Command:  l2vpn 
+Parent_m:l2vpn, Mode:l2-pw-rtg-l2vpn, eol_name: l2_pw_rtg_command, which_name: L2VPN_PW_RTG_CMD_V2, Command:  pseudowire routing 
+Parent_m:configure, Mode:ewag-gtp, eol_name: ewag_gtp_configure_mode, which_name: 0, Command:  gtp 
+Parent_m:ewag-gtp, Mode:ewag-gtp-apn, eol_name: ewag_gtp_configure_apn, which_name: 0, Command:  apn 1 
+Parent_m:ewag-gtp, Mode:ewag-gtp-qos, eol_name: ewag_gtp_configure_qos, which_name: 0, Command:  qos 
+Parent_m:ewag-gtp-apn, Mode:ewag-gtp-apn-qos, eol_name: ewag_gtp_configure_qos, which_name: 0, Command:  qos 
+Parent_m:configure, Mode:ipv6-pmipv6-domain, eol_name: pmipv6_domain_command, which_name: 0, Command:  ipv6 mobile pmipv6-domain str_1_s 
+Parent_m:ipv6-pmipv6-domain, Mode:ipv6-pmipv6-domain-lma, eol_name: pmipv6_domain_command, which_name: 0, Command:  lma str_1_s 
+Parent_m:ipv6-pmipv6-domain, Mode:ipv6-pmipv6-domain-mag, eol_name: pmipv6_domain_command, which_name: 0, Command:  mag str_1_s 
+Parent_m:ipv6-pmipv6-domain, Mode:ipv6-pmipv6-domain-mobile-map, eol_name: pmipv6_domain_command, which_name: 0, Command:  mobile-map str_1_s 1 
+Parent_m:ipv6-pmipv6-domain, Mode:ipv6-pmipv6-domain-mn, eol_name: pmipv6_domain_command, which_name: 0, Command:  nai str_1_s 
+Parent_m:configure, Mode:ipv6-pmipv6-lma, eol_name: pmipv6_lma_command, which_name: 0, Command:  ipv6 mobile pmipv6-lma str_1_s domain str_1_s 
+Parent_m:ipv6-pmipv6-lma, Mode:ipv6-pmipv6-lma-mag, eol_name: pmipv6_lma_command, which_name: 0, Command:  mag str_1_s str_1_s 
+Parent_m:ipv6-pmipv6-lma, Mode:ipv6-pmipv6-lma-haccess-svc, eol_name: pmipv6_lma_command, which_name: 0, Command:  mobility-service hybrid-access 
+Parent_m:ipv6-pmipv6-lma, Mode:ipv6-pmipv6-lma-svc, eol_name: pmipv6_lma_command, which_name: 0, Command:  mobility-service mobile-local-loop 
+Parent_m:ipv6-pmipv6-lma, Mode:ipv6-pmipv6-lma-network, eol_name: pmipv6_lma_command, which_name: 0, Command:  network str_1_s 
+Parent_m:ipv6-pmipv6-lma, Mode:ipv6-pmipv6-lma-role, eol_name: pmipv6_lma_command, which_name: 0, Command:  role 3GMA 
+Parent_m:ipv6-pmipv6-lma-svc, Mode:ipv6-pmipv6-lma-cust, eol_name: pmipv6_lma_command, which_name: 0, Command:  customer str_1_s vrf str_1_s 
+Parent_m:ipv6-pmipv6-lma-cust, Mode:ipv6-pmipv6-lma-cust-network, eol_name: pmipv6_lma_command, which_name: 0, Command:  network authorized str_1_s 
+Parent_m:ipv6-pmipv6-lma-cust, Mode:ipv6-pmipv6-lma-cust-tpt, eol_name: pmipv6_lma_command, which_name: 0, Command:  transport 
+Parent_m:ipv6-pmipv6-lma-haccess-svc, Mode:ipv6-pmipv6-lma-haccess-bw-ratio-svc, eol_name: pmipv6_lma_command, which_name: 0, Command:  bandwidth-ratio 
+Parent_m:ipv6-pmipv6-lma-haccess-svc, Mode:ipv6-pmipv6-lma-haccess-profile-def-svc, eol_name: pmipv6_lma_command, which_name: 0, Command:  profile-definition str_1_s 
+Parent_m:ipv6-pmipv6-lma-haccess-bw-ratio-svc, Mode:ipv6-pmipv6-lma-haccess-mag-bw-ratio-svc, eol_name: pmipv6_lma_command, which_name: 0, Command:  mag str_1_s 
+Parent_m:configure, Mode:ipv6-pmipv6-mag, eol_name: pmipv6_mag_command, which_name: 0, Command:  ipv6 mobile pmipv6-mag str_1_s domain str_1_s 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-addr-dyn, eol_name: pmipv6_mag_command, which_name: 0, Command:  address dynamic 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-intf, eol_name: pmipv6_mag_command, which_name: 0, Command:  interface GigabitEthernet1/0/3 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-lma, eol_name: pmipv6_mag_command, which_name: 0, Command:  lma str_1_s str_1_s 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-logicalmn, eol_name: pmipv6_mag_command, which_name: 0, Command:  logical-mn str_1_s 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-haccess-svc, eol_name: pmipv6_mag_command, which_name: 0, Command:  mobility-service hybrid-access 
+Parent_m:ipv6-pmipv6-mag, Mode:ipv6-pmipv6-mag-svc, eol_name: pmipv6_mag_command, which_name: 0, Command:  mobility-service mobile-local-loop 
+Parent_m:ipv6-pmipv6-mag-intf, Mode:ipv6-pmipv6-access-nwk-id, eol_name: pmipv6_mag_command, which_name: 0, Command:  ani 
+Parent_m:ipv6-pmipv6-mag-haccess-svc, Mode:ipv6-pmipv6-mag-haccess-bw-ratio-svc, eol_name: pmipv6_mag_command, which_name: 0, Command:  bandwidth-ratio 
+Parent_m:ipv6-pmipv6-mag-haccess-svc, Mode:ipv6-pmipv6-mag-haccess-profile-def-svc, eol_name: pmipv6_mag_command, which_name: 0, Command:  profile-definition str_1_s 
+Parent_m:configure, Mode:performance-measurement, eol_name: perf_measure_all_pm_command, which_name: 0, Command:  performance-measurement 
+Parent_m:performance-measurement, Mode:pm-interface, eol_name: perf_measure_interf_command, which_name: 0, Command:  interface GigabitEthernet1/0/3
+Parent_m:performance-measurement, Mode:pm-delay-profile, eol_name: perf_measure_del_prof_command, which_name: 0, Command:  delay-profile interfaces 
+Parent_m:performance-measurement, Mode:pm-twamp, eol_name: perf_measure_twamp_command, which_name: 0, Command:  protocol twamp-light 
+Parent_m:performance-measurement, Mode:pm-delay-profile-srpol, eol_name: perf_measure_del_prof_command_srpol, which_name: 0, Command:  delay-profile sr-policy 
+Parent_m:pm-delay-profile, Mode:pm-delay-profile-advertisement, eol_name: perf_measure_adv_command, which_name: 0, Command:  advertisement 
+Parent_m:pm-delay-profile, Mode:pm-delay-profile-probe, eol_name: perf_measure_probe_command, which_name: 0, Command:  probe 
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-accelerated, eol_name: perf_measure_adv_acc_command, which_name: 0, Command:  accelerated 
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-periodic, eol_name: perf_measure_adv_per_command, which_name: 0, Command:  periodic 
+Parent_m:pm-delay-profile-probe, Mode:delay-profile-probe-protocol, eol_name: perf_measure_probe_protocol_command, which_name: 0, Command:  protocol 
+Parent_m:pm-delay-profile-srpol, Mode:pm-delay-srpol-profile-advertisement, eol_name: perf_measure_adv_command_srpol, which_name: 0, Command:  advertisement 
+Parent_m:pm-delay-profile-srpol, Mode:pm-delay-profile-srpol-probe, eol_name: perf_measure_probe_command_srpol, which_name: 0, Command:  probe 
+Parent_m:pm-delay-profile-srpol, Mode:delay-profile-srpol-liveness, eol_name: perf_measure_liveness_command_srpol, which_name: 0, Command:  liveness-detection 
+Parent_m:pm-delay-srpol-profile-advertisement, Mode:pm-delay-profile-srpol-advertisement-accelerated, eol_name: perf_measure_adv_acc_command_srpol, which_name: 0, Command:  accelerated 
+Parent_m:pm-delay-srpol-profile-advertisement, Mode:pm-delay-profile-srpol-advertisement-periodic, eol_name: perf_measure_adv_per_command_srpol, which_name: 0, Command:  periodic 
+Parent_m:pm-delay-srpol-profile-advertisement, Mode:pm-delay-profile-srpol-advertisement-thcheck, eol_name: perf_measure_adv_thc_command_srpol, which_name: 0, Command:  threshold-check 
+Parent_m:pm-delay-profile-srpol-probe, Mode:delay-profile-srpol-probe-protocol, eol_name: perf_measure_probe_protocol_command_srpol, which_name: 0, Command:  protocol 
+Parent_m:pm-delay-profile-srpol-probe, Mode:delay-profile-srpol-probe-sweep, eol_name: perf_measure_delprof_probe_sweep_command_srpol, which_name: 0, Command:  sweep 
+Parent_m:pm-interface, Mode:interface-delay, eol_name: perf_measure_interf_delay_command, which_name: 0, Command:  delay-measurement 
+Parent_m:pm-twamp, Mode:pm-twamp-delay, eol_name: perf_measure_twamp_delay_command, which_name: 0, Command:  measurement delay 
+Parent_m:pm-twamp-delay, Mode:pm-twamp-delay-unauth, eol_name: perf_measure_twamp_delay_unauth_command, which_name: 0, Command:  unauthenticated 
+Parent_m:lisp-top, Mode:lisp-top-eid-table, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_EID_TABLE, Command:  eid-table   default instance-id 0 
+Parent_m:lisp-top, Mode:lisp-top-dynamic-eid, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_DYNAMIC_EID, Command:  dynamic-eid str_1_s 
+Parent_m:lisp-top, Mode:lisp-extranet, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_EXTRANET, Command:  extranet str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-site, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_SITE, Command:  site str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-nat-traversal-rtr, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_NAT_RTR, Command:  nat-traversal-rtr 
+Parent_m:lisp-top, Mode:lisp-top-rtr-set, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_RTR_SET, Command:  rtr-set str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-instance-range, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_INSTANCE_RANGE, Command:  instance-id-range 0 
+Parent_m:lisp-top, Mode:lisp-top-instance, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_INSTANCE, Command:  instance-id 0 
+Parent_m:lisp-top, Mode:lisp-top-lisp-service-ethernet, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_SERVICE_ETHERNET, Command:  service ethernet 
+Parent_m:lisp-top, Mode:lisp-top-lisp-service-ipv6, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_SERVICE_IPV6, Command:  service ipv6 
+Parent_m:lisp-top, Mode:lisp-top-lisp-service-ipv4, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_SERVICE_IPV4, Command:  service ipv4 
+Parent_m:lisp-top, Mode:lisp-top-locator-scope, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_LOCATOR_SCOPE, Command:  locator-scope str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-prefix-list, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_PREFIX_LIST, Command:  prefix-list str_1_s 
+Parent_m:lisp-top, Mode:lisp-remote-locator-set, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_REMOTE_LOCATOR_SET, Command:  remote-locator-set str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-locator-set, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_LOCATOR_SET, Command:  locator-set str_1_s 
+Parent_m:lisp-top, Mode:lisp-top-ddt-auth, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_DDT_AUTH, Command:  ddt authoritative instance-id 0 
+Parent_m:lisp-top, Mode:lisp-capability, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_CAPABILITY, Command:  capability 
+Parent_m:lisp-top-eid-table, Mode:lisp-eid_table-dynamic-eid, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_DYNAMIC_EID, Command:  dynamic-eid str_1_s 
+Parent_m:lisp-extranet, Mode:lisp-extranet-eid, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_EXTRANET_EID_GROUP, Command:  eid-record-provider instance-id 0 
+Parent_m:lisp-top-instance, Mode:lisp-instance_service_ipv6, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_INSTANCE_SERVICE_IPV6, Command:  service ipv6 
+Parent_m:lisp-top-instance, Mode:lisp-instance_service_ipv4, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_INSTANCE_SERVICE_IPV4, Command:  service ipv4 
+Parent_m:lisp-top-instance, Mode:lisp-top-inst-dynamic-eid, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_DYNAMIC_EID, Command:  dynamic-eid str_1_s 
+Parent_m:configure, Mode:cent_domain, eol_name: cent_domain_cfg_entry_command, which_name: CENT_DOMAIN_SUBMODE, Command:  domain str_1_s 
+Parent_m:cent_domain, Mode:cent_domain_vrf, eol_name: cent_vrf_cfg_entry_command, which_name: CENT_VRF_SUBMODE, Command:  vrf str_1_s 
+Parent_m:cent_domain, Mode:cent_br_all_vrf, eol_name: cent_br_cfg_command, which_name: CENT_BR_CFG_DOMAIN_INSTANCE_ALL_VRF, Command:  border 
+Parent_m:cent_br_all_vrf, Mode:cent_br_advanced_all_vrf, eol_name: cent_br_cfg_command, which_name: CENT_BR_ADV_CFG_INSTANCE_ALL_VRF, Command:  advanced 
+Parent_m:cent_domain_vrf, Mode:cent_mc, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_DOMAIN_INSTANCE, Command:  master branch 
+Parent_m:cent_domain_vrf, Mode:cent_br, eol_name: cent_br_cfg_command, which_name: CENT_BR_CFG_DOMAIN_INSTANCE, Command:  border 
+Parent_m:cent_br, Mode:cent_br_advanced, eol_name: cent_br_cfg_command, which_name: CENT_BR_ADV_CFG_INSTANCE, Command:  advanced 
+Parent_m:cent_mc, Mode:cent_mc_policy, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_POLICY_SERVICE, Command:  policy local type dca 
+Parent_m:cent_mc_policy, Mode:cent_mc_policy_class, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_POLICY, Command:  class str_1_s sequence 1 
+Parent_m:configure, Mode:sitemgr, eol_name: sitemgr_cfg_entry_command, which_name: SITEMGR_SUBMODE, Command:  site-manager 
+Parent_m:sitemgr, Mode:sitemgr_vrf, eol_name: sitemgr_vrf_cfg_entry_command, which_name: SITEMGR_VRF_SUBMODE, Command:  vrf str_1_s 
+Parent_m:sitemgr_vrf, Mode:sitemgr_mc, eol_name: cent_mc_cfg_command, which_name: SITEMGR_MC_CFG_INSTANCE, Command:  master branch 
+Parent_m:sitemgr_vrf, Mode:sitemgr_br, eol_name: cent_br_cfg_command, which_name: SITEMGR_BR_CFG_INSTANCE, Command:  border 
+Parent_m:sitemgr_mc, Mode:sitemgr_mc_policy, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_POLICY_SERVICE, Command:  policy local type dca 
+Parent_m:sitemgr_mc_policy, Mode:sitemgr_mc_policy_class, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_POLICY, Command:  class str_1_s sequence 1 
+Parent_m:sitemgr_mc_policy_class, Mode:sitemgr_mc_policy_class_type, eol_name: cent_mc_cfg_command, which_name: CENT_MC_CFG_POLICY_TYPE, Command:  match app-group str_1_s policy custom 
+Parent_m:configure, Mode:config-vxlan-route-policy, eol_name: vxlan_static_route_cmd, which_name: VXLAN_STATIC_ROUTE_POLICY_MODE, Command:  vxlan static-route policy output 
+Parent_m:config-vxlan-route-policy, Mode:config-vxlan-route-policy-vrf, eol_name: vxlan_static_route_cmd, which_name: VXLAN_STATIC_ROUTE_POLICY_VRFMODE, Command:  vrf   str_1_s 
+Parent_m:configure, Mode:suppservice, eol_name: stcapp_supp_command, which_name: 0, Command:  stcapp supplementary-services 
+Parent_m:configure, Mode:crypto-keyring, eol_name: crypto_keyring_command, which_name: 0, Command:  crypto keyring str_1_s 
+Parent_m:configure, Mode:ikev2-author-policy, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 authorization policy str_1_s 
+Parent_m:configure, Mode:ikev2-keyring, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 keyring str_1_s 
+Parent_m:configure, Mode:ikev2-name-mangler, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 name-mangler str_1_s 
+Parent_m:configure, Mode:ikev2-policy, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 policy str_1_s 
+Parent_m:configure, Mode:ikev2-ppk, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 ppk str_1_s 
+Parent_m:configure, Mode:ikev2-profile, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 profile str_1_s 
+Parent_m:configure, Mode:ikev2-proposal, eol_name: crypto_ikev2_command, which_name: 0, Command:  crypto ikev2 proposal str_1_s 
+Parent_m:ikev2-keyring, Mode:ikev2-keyring-peer, eol_name: crypto_ikev2_keyring_command_eols, which_name: PARSER_CRYPTO_IKEV2_KEYRING_PEER, Command:  peer str_1_s 
+Parent_m:configure, Mode:crypto-gkm-group, eol_name: crypto_gdoi_command, which_name: PARSER_CRYPTO_GDOI_GROUP_NAME, Command:  crypto gdoi group str_1_s 
+Parent_m:crypto-gkm-group, Mode:gkm-local-server, eol_name: crypto_gdoi_group_command, which_name: PARSER_CRYPTO_GDOI_GROUP_SERVER, Command:  server local 
+Parent_m:gkm-local-server, Mode:gdoi-coop-ks-config, eol_name: crypto_gdoi_server_local_mode_command, which_name: PARSER_CRYPTO_GDOI_REDUNDANCY, Command:  redundancy 
+Parent_m:gkm-local-server, Mode:gkm-local-server-id, eol_name: crypto_gdoi_server_local_mode_command, which_name: PARSER_CRYPTO_GDOI_SL_IDENTIFIER, Command:  identifier 
+Parent_m:configure, Mode:srmpls, eol_name: sr_mpls_cfg_set_mode, which_name: SR_MPLS_MODE, Command:  segment-routing mpls 
+Parent_m:srmpls, Mode:srmpls-attr, eol_name: sr_attr_cfg_set_mode, which_name: 0, Command:  set-attributes 
+Parent_m:srmpls, Mode:srmpls-conn, eol_name: sr_conn_prefix_sid_map_cfg_set_mode, which_name: 0, Command:  connected-prefix-sid-map 
+Parent_m:srmpls, Mode:srmpls-mapserver, eol_name: sr_mapserver_cfg_set_mode, which_name: 0, Command:  mapping-server 
+Parent_m:srmpls-conn, Mode:srmpls-conn-af-algo, eol_name: sr_prefix_sid_map_af_algo_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 algorithm 128 
+Parent_m:srmpls-conn, Mode:srmpls-conn-af, eol_name: sr_prefix_sid_map_af_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 
+Parent_m:srmpls-conn, Mode:srmpls-conn-af-ss, eol_name: sr_prefix_sid_map_af_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 strict-spf 
+Parent_m:srmpls-attr, Mode:srmpls-attr-af, eol_name: sr_attr_af_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 
+Parent_m:srmpls-mapserver, Mode:srmpls-mapserver-sidmap, eol_name: sr_mapserver_sidmap_cfg_set_mode, which_name: 0, Command:  prefix-sid-map 
+Parent_m:srmpls-mapserver-sidmap, Mode:srmpls-mapserver-sidmap-af-algo, eol_name: sr_mapserver_sidmap_af_algo_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 algorithm 128 
+Parent_m:srmpls-mapserver-sidmap, Mode:srmpls-mapserver-sidmap-af, eol_name: sr_mapserver_sidmap_af_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 
+Parent_m:srmpls-mapserver-sidmap, Mode:srmpls-mapserver-sidmap-af-ss, eol_name: sr_mapserver_sidmap_af_cfg_set_mode, which_name: 0, Command:  address-family   ipv4 strict-spf 
+Parent_m:configure, Mode:voice-service, eol_name: encap_service_cfg, which_name: ENCAP_VOIP, Command:  voice service voip 
+Parent_m:voice-service, Mode:voice-service-session, eol_name: encap_service_session_cfg, which_name: voipSessionProtoAAL2, Command:  get_commands_from_mode 
+Parent_m:voice-service, Mode:voice-service-h323, eol_name: h323_submode_cfg, which_name: 0, Command:  h323 
+Parent_m:voice-service, Mode:iptrust-list, eol_name: iptrust_cfg_list_command, which_name: IPTRUST_CFG_LIST_CMD, Command:  ip address trusted list 
+Parent_m:voice-service, Mode:media-addr-range, eol_name: config_voice_media_address_proc, which_name: 0, Command:  media-address range 1.1.1.1 1.1.1.1 
+Parent_m:voice-service, Mode:media-addr-vrf, eol_name: config_voice_media_address_proc, which_name: 0, Command:  media-address voice-vrf str_1_s 
+Parent_m:voice-service, Mode:voice-service-sip, eol_name: configure_sip_submode, which_name: 0, Command:  sip 
+Parent_m:voice-service, Mode:vpn-group, eol_name: config_vpn_group, which_name: 0, Command:  vpn-group 1 
+Parent_m:voice-service, Mode:vpn-profile, eol_name: config_vpn_profile, which_name: 0, Command:  vpn-profile 1 
+Parent_m:voice-service, Mode:voice-service-trace, eol_name: configure_trace_submode, which_name: 0, Command:  trace 
+Parent_m:voice-service, Mode:voice-service-stun, eol_name: configure_stun_submode, which_name: 0, Command:  stun 
+Parent_m:voice-service, Mode:voice-service-call-quality, eol_name: voice_call_quality_command, which_name: 0, Command:  call-quality 
+Parent_m:configure, Mode:mediaprofile, eol_name: media_profile_config_top, which_name: MEDIA_PROFILE_ASP, Command:  media profile asp 1 
+Parent_m:mediaprofile, Mode:mediaprof-asp-exp, eol_name: config_profile_acoustic_shock, which_name: PROFILE_ASP_MODE, Command:  mode expert 
+Parent_m:configure, Mode:mediaclass, eol_name: media_class_config_top, which_name: MEDIA_CLASS_TYPE, Command:  media class 1 
+Parent_m:mediaclass, Mode:mediaclass-asp, eol_name: conf_media_class, which_name: MEDIACLASS_CFG_ASP_PARAM, Command:  asp parameter 
+Parent_m:mediaclass, Mode:mediaclass-nr, eol_name: conf_media_class, which_name: MEDIACLASS_CFG_NR_PARAM, Command:  nr parameter 
+Parent_m:mediaclass, Mode:mediaclass-recorder, eol_name: conf_media_class, which_name: MEDIACLASS_CFG_RECORDER_PARAM, Command:  recorder parameter 
+Parent_m:mediaclass-asp, Mode:mediaclass-asp-exp, eol_name: config_class_acoustic_shock, which_name: PROFILE_ASP_MODE, Command:  mode expert 
+Parent_m:configure, Mode:mediaservice, eol_name: media_service, which_name: 0, Command:  media service 
+Parent_m:mediaservice, Mode:mediaserviceenhance, eol_name: media_service_enhancement, which_name: 0, Command:  enhancement 
+Parent_m:configure, Mode:uc_wsapi_mode, eol_name: config_uc_wsapi_command, which_name: 0, Command:  uc wsapi 
+Parent_m:uc_wsapi_mode, Mode:wsapi_xcc_mode, eol_name: config_wsapi_xcc_command, which_name: 0, Command:  provider xcc 
+Parent_m:uc_wsapi_mode, Mode:wsapi_xsvc_mode, eol_name: config_wsapi_xsvc_command, which_name: 0, Command:  provider xsvc 
+Parent_m:uc_wsapi_mode, Mode:wsapi_xmf_mode, eol_name: config_wsapi_xmf_command, which_name: 0, Command:  provider xmf 
+Parent_m:uc_wsapi_mode, Mode:wsapi_xcdr_mode, eol_name: config_wsapi_xcdr_command, which_name: 0, Command:  provider xcdr 
+Parent_m:configure, Mode:config_voice, eol_name: cam_app_func_set_cfg_voice_mode, which_name: 0, Command:  application 
+Parent_m:config_voice, Mode:config_app_global, eol_name: cam_app_func_set_cfg_submode, which_name: 0, Command:  global 
+Parent_m:config_voice, Mode:config_voice_app, eol_name: cam_app_func_set_cfg_submode, which_name: 0, Command:  group-params str_1_s 
+Parent_m:config_voice, Mode:config_app_map, eol_name: cam_app_func_set_cfg_submode, which_name: 0, Command:  map 
+Parent_m:config_voice, Mode:config_app_monitor, eol_name: cam_app_func_set_cfg_submode, which_name: 0, Command:  monitor 
+Parent_m:config_voice, Mode:config_app_session, eol_name: cam_app_func_set_cfg_submode, which_name: 0, Command:  session 
+Parent_m:configure, Mode:telephony-service, eol_name: config_ip_keyswitch_command, which_name: 0, Command:  telephony-service 
+Parent_m:telephony-service, Mode:telephony-service-video, eol_name: config_ipks_video_submode, which_name: 0, Command:  video 
+Parent_m:telephony-service, Mode:telephony-service-group, eol_name: config_ipks_subcme_tag, which_name: 0, Command:  group 1 
+Parent_m:configure, Mode:voice-register-global, eol_name: config_voice_register_global, which_name: 0, Command:  voice register global 
+Parent_m:voice-register-global, Mode:voice-reg-group, eol_name: config_voice_reg_group_tag, which_name: 0, Command:  group 1 
+Parent_m:configure, Mode:utd-eng-std, eol_name: mcprp_ngfw_utd_std_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_STD, Command:  utd engine standard 
+Parent_m:configure, Mode:utd-eng-adv, eol_name: mcprp_ngfw_utd_adv_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_ADV, Command:  utd engine advanced 
+Parent_m:configure, Mode:utd-whitelist, eol_name: mcprp_ngfw_utd_whitelist_command, which_name: MCPRP_NGFW_CMD_UTD_WHITELIST, Command:  utd threat-inspection whitelist 
+Parent_m:configure, Mode:utd-unified-policy, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_UNIFIED_POLICY, Command:  utd engine standard unified-policy 
+Parent_m:configure, Mode:utd-webf-source-db, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_SOURCEDB, Command:  utd web-filter sourcedb str_1_s 
+Parent_m:configure, Mode:utd-web-filter-url, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_URL, Command:  utd web-filter url profile str_1_s 
+Parent_m:configure, Mode:utd-web-filter-domain, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_DOMAIN, Command:  utd web-filter domain profile str_1_s 
+Parent_m:configure, Mode:utd-web-fltr-block-urc, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_BLOCK, Command:  utd web-filter block page profile str_1_s 
+Parent_m:configure, Mode:utd-webf-block-srvr, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_BLOCK_SERVER, Command:  utd web-filter block local-server profile str_1_s 
+Parent_m:configure, Mode:utd, eol_name: mcprp_ngfw_command, which_name: MCPRP_NGFW_CMD, Command:  utd 
+Parent_m:utd, Mode:engine-advanced, eol_name: mcprp_ngfw_utd_eng_command, which_name: MCPRP_NGFW_UTD_ENGINE_ADVANCED, Command:  engine advanced 
+Parent_m:utd, Mode:engine-standard, eol_name: mcprp_ngfw_utd_eng_command, which_name: MCPRP_NGFW_UTD_ENGINE_STANDARD, Command:  engine standard 
+Parent_m:utd-eng-std, Mode:utd-eng-std-insp, eol_name: mcprp_ngfw_utd_std_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_STD_IPS_SUB, Command:  threat-inspection 
+Parent_m:utd-eng-std, Mode:utd-eng-webfltr, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_WEB_FLTR_SUBMODE, Command:  web-filter 
+Parent_m:utd-eng-std-insp, Mode:utd-threat-port-scan, eol_name: mcprp_ngfw_utd_std_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_STD_IPS_PORT_SCAN, Command:  port-scan 
+Parent_m:utd-web-filter-domain, Mode:utd-web-fltr-domain-blist, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_BLIST, Command:  blacklist 
+Parent_m:utd-web-filter-domain, Mode:utd-web-fltr-domain-wlist, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_WLIST, Command:  whitelist 
+Parent_m:utd-web-filter-url, Mode:utd-web-fltr-reput, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_REPUTATION, Command:  reputation 
+Parent_m:utd-web-filter-url, Mode:utd-web-fltr-categ, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_CATEGORIES, Command:  categories allow 
+Parent_m:utd-web-filter-url, Mode:utd-web-fltr-url-blist, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_BLIST, Command:  blacklist 
+Parent_m:utd-web-filter-url, Mode:utd-web-fltr-url-wlist, eol_name: mcprp_ngfw_utd_web_filter_command, which_name: MCPRP_NGFW_CMD_UTD_WEB_FLTR_WLIST, Command:  whitelist 
+Parent_m:configure, Mode:utd-multitenancy, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT, Command:  utd engine standard multi-tenancy 
+Parent_m:utd-multitenancy, Mode:utd-mt-policy, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_POLICY, Command:  policy str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-webf-source-db, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_SOURCEDB, Command:  web-filter sourcedb str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-web-fltr-url, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_URL, Command:  web-filter url profile str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-web-fltr-block-urc, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_BLOCK, Command:  web-filter block page profile str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-webf-block-srvr, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_BLOCK_SERVER, Command:  web-filter block local-server profile str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-whitelist-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_WHITELIST_PROFILE, Command:  threat-inspection whitelist profile str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-threat-inspection-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_THREAT_PROFILE, Command:  threat-inspection profile str_1_s 
+Parent_m:utd-multitenancy, Mode:utd-mt-global, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_GLOBAL, Command:  utd global 
+Parent_m:utd-mt-global, Mode:utd-mt-global-threat, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_MT_THREAT_SUBMODE, Command:  threat-inspection 
+Parent_m:utd-mt-global, Mode:utd-mt-global-webfltr, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_ENG_MT_WEB_FLTR_SUBMODE, Command:  web-filter 
+Parent_m:utd-mt-threat-inspection-profile, Mode:utd-mt-threat-port-scan, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_THREAT_PORT_SCAN, Command:  port-scan 
+Parent_m:utd-mt-web-fltr-url, Mode:utd-mt-web-fltr-reput, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_REPUTATION, Command:  reputation 
+Parent_m:utd-mt-web-fltr-url, Mode:utd-mt-web-fltr-categ, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_CATEGORIES, Command:  categories allow 
+Parent_m:utd-mt-web-fltr-url, Mode:utd-mt-web-fltr-url-blist, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_BLIST, Command:  blacklist 
+Parent_m:utd-mt-web-fltr-url, Mode:utd-mt-web-fltr-url-wlist, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_WLIST, Command:  whitelist 
+Parent_m:configure, Mode:sbc-h248-bac, eol_name: cfg_sbc_h248_bac, which_name: CFG_H248_BAC, Command:  sbc h248 bac 
+Parent_m:configure, Mode:config-sbc-name-mode, eol_name: cfg_sbc_commands, which_name: CFG_SBC_NAME, Command:  sbc str_1_s 
+Parent_m:configure, Mode:sbc-dbe, eol_name: cfg_sbc_commands, which_name: CFG_SBC_DBE, Command:  sbc str_1_s dbe 
+Parent_m:configure, Mode:sbc-ctl-file, eol_name: cfg_sbc_ctl_file, which_name: CFG_CTL_FILE, Command:  voice-ctl-file str_1_s 
+Parent_m:configure, Mode:sbc-phone-proxy, eol_name: cfg_sbc_phone_proxy, which_name: CFG_PHONE_PROXY, Command:  voice-phone-proxy str_1_s 
+Parent_m:configure, Mode:sbc-pp-pr, eol_name: cfg_sbc_phone_proxy_tftp_addr, which_name: CFG_PHONE_PROXY_TFTP_ADDR, Command:  voice-phone-proxy tftp-address ipv4 1.1.1.1 
+Parent_m:sbc-dbe, Mode:sbc-dbe-vdbe, eol_name: cfg_sbc_dbe_vdbe_commands, which_name: CFG_SBC_DBE_VDBE, Command:  vdbe 
+Parent_m:sbc-dbe, Mode:sbc-dbe-media-address, eol_name: cfg_sbc_commands, which_name: CFG_SBC_DBE_ADDRESS_IPV4, Command:  media-address ipv4 1.1.1.1 
+Parent_m:sbc-dbe-vdbe, Mode:sbc-dbe-vdbe-h248, eol_name: cfg_sbc_dbe_vdbe_controller_commands, which_name: 0, Command:  controller h248 0 
+Parent_m:sbc-dbe-vdbe-h248, Mode:sbc-dbe-vdbe-h248-iah, eol_name: cfg_sbc_dbe_vdbe_h248_commands, which_name: CFG_SBC_DBE_VDBE_CONTROLLER_H248_TRANSPORT, Command:  transport tcp interim-auth-header ah-md5-hmac 
+Parent_m:config-sbc-name-mode, Mode:sbc-media-address, eol_name: cfg_sbc_commands, which_name: CFG_SBC_DBE_ADDRESS_IPV4, Command:  media-address ipv4 1.1.1.1 
+Parent_m:config-sbc-name-mode, Mode:sbc-sbe, eol_name: cfg_sbc_commands, which_name: CFG_SBC_SBE, Command:  sbe 
+Parent_m:sbc-sbe, Mode:sbc-sbe-ad, eol_name: cfg_sbc_sbe, which_name: CFG_SBC_SBE_ADMIN_DOMAIN, Command:  get_from_module_cmds 
+Parent_m:sbc-sbe, Mode:sbc-sbe-subscriber-entry, eol_name: cfg_sbc_sbe_subscriber, which_name: CFG_SBC_SBE_ADJ_SIP_SUBSCRIBER, Command:  get_from_module_cmds 
+Parent_m:sbc-sbe, Mode:sbc-sbe-acc, eol_name: cfg_sbc_sbe_radius, which_name: CFG_SBC_SBE_RADIUS_ACCOUNTING, Command:  get_from_module_cmds 
+Parent_m:sbc-sbe, Mode:sbc-sbe-billing, eol_name: cfg_sbc_sbe_billing, which_name: CFG_SBC_SBE_BILLING, Command:  billing 
+Parent_m:sbc-sbe, Mode:sbc-sbe-rf-billing, eol_name: cfg_sbc_sbe_billing, which_name: CFG_SBC_SBE_RFBILLING, Command:  rf billing 
+Parent_m:sbc-sbe, Mode:sbc-sbe-blacklist, eol_name: cfg_sbc_sbe_blacklist, which_name: CFG_SBC_SBE_BLACKLIST_ADDRESS_DEFAULT_IPV6, Command:  blacklist critical vpn str_1_s address-default address-family ipv6 
+Parent_m:sbc-sbe, Mode:sbc-sbe-cacpolicy, eol_name: cfg_sbc_sbe_cac_policy_cli, which_name: CFG_SBC_SBE_CAC_POLICY_SET, Command:  cac-policy-set 1 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sub-delegate-profile, eol_name: cnf_sbc_sbe_delegate_prof_cli, which_name: CFG_SBC_SBE_DELEGATE_PROF_SUBMODE, Command:  delegate-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-tmr, eol_name: cfg_sbc_sbe, which_name: CFG_SBC_SBE_SIP_TIMER, Command:  sip timer 
+Parent_m:sbc-sbe, Mode:sbc-sbe-dns, eol_name: cfg_sbc_sbe, which_name: CFG_SBC_SBE_SIP_DNS, Command:  sip dns 
+Parent_m:sbc-sbe, Mode:sbc-sbe-h323, eol_name: cfg_sbc_sbe_h323, which_name: CFG_SBC_SBE_H323, Command:  h323 
+Parent_m:sbc-sbe, Mode:sbc-sbe-adj-h323, eol_name: cfg_sbc_sbe_adjacency_h323, which_name: CFG_SBC_SBE_ADJ_H323, Command:  adjacency h323 str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-sdp-policy-tbl, eol_name: cfg_sbc_sbe, which_name: CFG_SBC_SBE_SDP_POLICY_TABLE, Command:  sdp-policy-table str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-sdp-match-tbl, eol_name: cfg_sbc_sbe, which_name: CFG_SBC_SBE_SDP_MATCH_TABLE, Command:  sdp-match-table str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-adj-sip, eol_name: cfg_sbc_sbe_adjacency_sip, which_name: CFG_SBC_SBE_ADJ_SIP, Command:  adjacency sip str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-ctrl-h248, eol_name: cfg_sbc_sbe_control_addr, which_name: CFG_SBC_SBE_CONTROL_ADDRESS_H248, Command:  control address h248 index 0 
+Parent_m:sbc-sbe, Mode:sbc-sbe-media-pol, eol_name: cfg_sbc_sbe_media_policy_limits, which_name: CFG_SBC_SBE_MEDIA_POLICY, Command:  media-policy str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mg, eol_name: cfg_sbc_sbe_media_gateway, which_name: CFG_SBC_SBE_MEDIA_GATEWAY_IPV4, Command:  media-gateway ipv4 1.1.1.1 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mg-pol, eol_name: cfg_sbc_sbe_media_gateway_policy, which_name: CFG_SBC_SBE_MEDIA_GATEWAY_POLICY_TYPE_DEFAULT, Command:  media-gateway policy type default 
+Parent_m:sbc-sbe, Mode:sbc-sbe-codec-list, eol_name: cfg_sbc_sbe_codec_list, which_name: CFG_SBC_SBE_CODEC_LIST, Command:  codec list str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-rsrc-pri-set, eol_name: cfg_sbc_sbe_rsrc_priority_set, which_name: CFG_SBC_SBE_RESOURCE_PRIORITY_SET, Command:  resource-priority-set str_1_s 
+Parent_m:sbc-sbe-rsrc-pri-set, Mode:sbc-sbe-rsrc-pri, eol_name: cfg_sbc_sbe_rsrc_priority_set, which_name: CFG_SBC_SBE_RESOURCE_PRIORITY_SET_RSRC_PRIORIT, Command: get_from_module_cmds  
+Parent_m:sbc-sbe, Mode:sbc-sbe-diameter, eol_name: cfg_sbc_sbe_diameter, which_name: CFG_SBC_SBE_DIAMETER, Command:  diameter 
+Parent_m:sbc-sbe, Mode:sbc-sbe-enum, eol_name: cfg_sbc_sbe_enum, which_name: CFG_SBC_SBE_ENUM_SRS, Command:  enum 1 
+Parent_m:sbc-sbe, Mode:sbc-sbe-qos-fax, eol_name: cfg_sbc_sbe_qos, which_name: CFG_SBC_SBE_QOS_FAX, Command:  qos fax str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-qos-sig, eol_name: cfg_sbc_sbe_qos, which_name: CFG_SBC_SBE_QOS_SIG, Command:  qos sig str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-qos-video, eol_name: cfg_sbc_sbe_qos, which_name: CFG_SBC_SBE_QOS_VIDEO, Command:  qos video str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-qos-voice, eol_name: cfg_sbc_sbe_qos, which_name: CFG_SBC_SBE_QOS_VOICE, Command:  qos voice str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-auth, eol_name: cfg_sbc_sbe_radius, which_name: CFG_SBC_SBE_RADIUS_AUTHENTICATION, Command:  radius authentication 
+Parent_m:sbc-sbe, Mode:sbc-sbe-rtgpolicy, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALL_POLICY_SET, Command:  call-policy-set 1 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mep-hdr, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE, Command:  sip header-editor str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mep-prm, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_PARAMETER_PROFILE, Command:  sip parameter-editor str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mep-mth, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_METHOD_PROFILE, Command:  sip method-editor str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mep-bdy, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_BODY_PROFILE, Command:  sip body-editor str_1_s 
+Parent_m:sbc-sbe-mep-bdy, Mode:sbc-sbe-mep-bdy-ele, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_BODY_PROFILE_BODY, Command:  get_from_module_cmds 
+Parent_m:sbc-sbe, Mode:sbc-sbe-mep-opt, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_OPTION_PROFILE, Command:  sip option-editor str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-mth, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_METHOD_PROFILE, Command:  sip method-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-err, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_ERROR_PROFILE, Command:  sip error-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-body, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_BODY_PROFILE_X, Command:  sip body-profile str_1_s 
+Parent_m:sbc-sbe-sip-body, Mode:sbc-sbe-sip-body-ele, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_BODY_PROFILE_BODY, Command:  get_from_module_dep_file 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-sdp-media, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_SDP_MEDIA_PROFILE_X, Command:  sip sdp-media-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-hdr, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE, Command:  sip header-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-prm, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_PARAMETER_PROFILE, Command:  sip parameter-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-sip-opt, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_OPTION_PROFILE, Command:  sip option-profile str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_ROUND_TRIP_DELAY, Command:  statistics rtd 
+Parent_m:sbc-sbe, Mode:sbc-sbe-stream-list, eol_name: cfg_sbc_sbe_stream_list, which_name: CFG_SBC_SBE_STREAM_LIST, Command:  stream-list str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-codec-define, eol_name: config_sbc_sbe_codec_custom, which_name: 0, Command:  codec custom str_2_s id 24 
+Parent_m:sbc-sbe, Mode:sbc-sbe-codec-variant-codec, eol_name: config_sbc_sbe_codec_variant_codec, which_name: 0, Command:  codec variant codec str_1_s 
+Parent_m:sbc-sbe, Mode:sbc-sbe-codec-variant-profile, eol_name: config_sbc_sbe_codec_profile, which_name: 0, Command:  codec variant profile str_1_s 
+Parent_m:sbc-sbe-adj-sip, Mode:sbc-sbe-adj-sip-peer, eol_name: cfg_sbc_sbe_adjacency_sip, which_name: CFG_SBC_SBE_ADJ_SIP_PEER, Command:  redundant peer 1 
+Parent_m:sbc-sbe-adj-sip, Mode:sbc-sbe-adj-sip-ping, eol_name: cfg_sbc_sbe_adjacency_sip, which_name: CFG_SBC_SBE_ADJ_PING_ENABLE, Command:  ping-enable 
+Parent_m:sbc-sbe-enum, Mode:sbc-sbe-enum-entry, eol_name: cfg_sbc_sbe_enum, which_name: CFG_SBC_SBE_ENUM_SRS_CFG_NAME, Command:  entry str_1_s 
+Parent_m:sbc-sbe-billing, Mode:sbc-sbe-billing-rf, eol_name: cfg_sbc_sbe_billing, which_name: CFG_SBC_SBE_BILLING_RF, Command:  rf 0 
+Parent_m:sbc-sbe-billing, Mode:sbc-sbe-billing-xml, eol_name: cfg_sbc_sbe_billing, which_name: CFG_SBC_SBE_BILLING_XML, Command:  xml 0 
+Parent_m:sbc-sbe-cacpolicy, Mode:sbc-sbe-cacpolicy-cactable, eol_name: cfg_sbc_sbe_cacpolicy_limits, which_name: CFG_SBC_SBE_CACPOLICY_CACTABLE, Command:  cac-table str_1_s 
+Parent_m:sbc-sbe-cacpolicy-cactable, Mode:sbc-sbe-cacpolicy-cactable-entry, eol_name: cfg_sbc_sbe_cacpolicy_limits, which_name: CFG_SBC_SBE_CACPOLICY_CACTABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-mg, Mode:sbc-sbe-mg-codecs, eol_name: cfg_sbc_sbe_media_gateway, which_name: CFG_SBC_SBE_MEDIA_GATEWAY_IPV4_CODECS, Command:  codecs str_1_s 
+Parent_m:sbc-sbe-sip-hdr, Mode:sbc-sbe-sip-hdr-ele, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_HEADER, Command:  header str_1_s 
+Parent_m:sbc-sbe-sip-hdr, Mode:sbc-sbe-sip-hdr-dst, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_DST_ADDRESS, Command:  dst-address 
+Parent_m:sbc-sbe-sip-hdr, Mode:sbc-sbe-sip-hdr-src, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_SRC_ADDRESS, Command:  src-address 
+Parent_m:sbc-sbe-sip-hdr, Mode:sbc-sbe-sip-hdr-div, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_DIV_ADDRESS, Command:  div-address 
+Parent_m:sbc-sbe-sip-hdr-ele, Mode:sbc-sbe-sip-hdr-ele-act, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_HDR_ACTION, Command:  action add-first-header value str_1_s 
+Parent_m:sbc-sbe-sip-mth, Mode:sbc-sbe-sip-mth-ele, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_METHOD_PROFILE_METHOD, Command:  method str_1_s 
+Parent_m:sbc-sbe-sip-mth-ele, Mode:sbc-sbe-sip-mth-ele-map, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_METHOD_PROFILE_METHOD_MAP_STATUS_CODE, Command:  map-status-code 
+Parent_m:sbc-sbe-sip-sdp-media, Mode:sbc-sbe-sip-sdp-media-ele, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_SDP_MEDIA_PROFILE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-sip-prm, Mode:sbc-sbe-sip-prm-ele, eol_name: cfg_sbc_sbe_sip, which_name: CFG_SBC_SBE_SIP_PARAMETER_PROFILE_PARAMETER, Command:  parameter str_1_s 
+Parent_m:sbc-sbe-mep-mth, Mode:sbc-sbe-mep-mth-ele, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_METHOD_PROFILE_METHOD, Command:  method str_1_s 
+Parent_m:sbc-sbe-mep-prm, Mode:sbc-sbe-mep-prm-ele, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_PARAMETER_PROFILE_PARAMETER, Command:  parameter str_1_s 
+Parent_m:sbc-sbe-mep-hdr, Mode:sbc-sbe-mep-hdr-ele, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_HEADER, Command:  header str_1_s 
+Parent_m:sbc-sbe-mep-hdr, Mode:sbc-sbe-mep-hdr-dst, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_DST_ADDRESS, Command:  dst-address 
+Parent_m:sbc-sbe-mep-hdr, Mode:sbc-sbe-mep-hdr-src, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_SRC_ADDRESS, Command:  src-address 
+Parent_m:sbc-sbe-mep-hdr, Mode:sbc-sbe-mep-hdr-div, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_DIV_ADDRESS, Command:  div-address 
+Parent_m:sbc-sbe-mep-hdr-ele, Mode:sbc-sbe-mep-hdr-ele-act, eol_name: cfg_sbc_sbe_sip_editor, which_name: CFG_SBC_SBE_SIP_HEADER_PROFILE_HDR_ACTION, Command:  action pass 
+Parent_m:sbc-sbe-auth, Mode:sbc-sbe-auth-ser, eol_name: cfg_sbc_sbe_radius, which_name: CFG_SBC_SBE_RADIUS_AUTHENTICATION_SERVER, Command:  server str_1_s 
+Parent_m:sbc-sbe-diameter, Mode:sbc-sbe-diameter-e2, eol_name: cfg_sbc_sbe_diameter, which_name: CFG_SBC_SBE_DIAMETER_E2, Command:  app e2 
+Parent_m:sbc-sbe-diameter, Mode:sbc-sbe-diameter-rx, eol_name: cfg_sbc_sbe_diameter, which_name: CFG_SBC_SBE_DIAMETER_RX, Command:  app rx 
+Parent_m:sbc-sbe-blacklist, Mode:sbc-sbe-blacklist-reason, eol_name: cfg_sbc_sbe_blacklist, which_name: CFG_SBC_SBE_BLACKLIST_REASON, Command:  reason policy-rejection 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-dst-trunk-group-id-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_DST_TGID_TABLE, Command:  rtg-dst-trunk-group-id-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-src-trunk-group-id-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_SRC_TGID_TABLE, Command:  rtg-src-trunk-group-id-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-least-cost-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_LEAST_COST_TABLE, Command:  rtg-least-cost-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-category-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_CATEGORY_TABLE, Command:  rtg-category-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-time-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_TIME_TABLE, Command:  rtg-time-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-src-address-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_SRC_ADDRESS_TABLE, Command: na-src-number-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-src-prefix-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_SRC_PREFIX_TABLE, Command:  na-src-prefix-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-round-robin-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_ROUND_ROBIN_TABLE, Command:  rtg-round-robin-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-src-account-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_SRC_ACCOUNT_TABLE, Command:  rtg-src-account-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-src-adjacency-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_SRC_ADJACENCY_TABLE, Command:  rtg-src-adjacency-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-src-address-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_SRC_ADDRESS_TABLE, Command:  rtg-src-address-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-dst-address-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_DST_ADDRESS_TABLE, Command:  rtg-dst-address-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-carrier-id-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_CARRIER_ID_TABLE, Command:  rtg-carrier-id-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-src-domain-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_SRC_DOMAIN_TABLE, Command:  rtg-src-domain-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-rtg-dst-domain-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_RTG_DST_DOMAIN_TABLE, Command:  rtg-dst-domain-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-src-account-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_SRC_ACCOUNT_TABLE, Command:  na-src-account-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-src-adjacency-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_SRC_ADJACENCY_TABLE, Command:  na-src-adjacency-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-src-name-anon-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_NA_SRC_NAME_ANONYMOUS_TABLE, Command:  na-src-name-anonymous-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-dst-prefix-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_DST_PREFIX_TABLE, Command:  na-dst-prefix-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-dst-address-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_DST_ADDRESS_TABLE, Command: na-dst-number-table str_1_s 
+Parent_m:sbc-sbe-rtgpolicy, Mode:sbc-sbe-callpolicy-na-carrier-id-table, eol_name: cfg_sbc_sbe_routing_table, which_name: CFG_SBC_SBE_CALLPOLICY_NA_CARRIER_ID_TABLE, Command: na-dst-number-attr-table str_1_s 
+Parent_m:sbc-sbe-callpolicy-na-carrier-id-table, Mode:sbc-sbe-na-carrier-id-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_CARRIER_ID_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-dst-address-table, Mode:sbc-sbe-na-dst-address-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_DST_ADDRESS_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-dst-prefix-table, Mode:sbc-sbe-na-dst-prefix-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_DST_PREFIX_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-src-name-anon-table, Mode:sbc-sbe-na-src-name-anon-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_SRC_NAME_ANON_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-src-address-table, Mode:sbc-sbe-na-src-address-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_SRC_ADDRESS_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-src-prefix-table, Mode:sbc-sbe-na-src-prefix-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_SRC_PREFIX_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-src-adjacency-table, Mode:sbc-sbe-na-src-adjacency-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_SRC_ADJACENCY_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-na-src-account-table, Mode:sbc-sbe-na-src-account-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_NA_SRC_ACCOUNT_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-dst-domain-table, Mode:sbc-sbe-rtg-dst-domain-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_DST_DOMAIN_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-src-domain-table, Mode:sbc-sbe-rtg-src-domain-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_SRC_DOMAIN_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-carrier-id-table, Mode:sbc-sbe-rtg-carrier-id-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_CARRIER_ID_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-dst-address-table, Mode:sbc-sbe-rtg-dst-address-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_DST_ADDRESS_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-src-address-table, Mode:sbc-sbe-rtg-src-address-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_SRC_ADDRESS_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-src-adjacency-table, Mode:sbc-sbe-rtg-src-adjacency-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_SRC_ADJACENCY_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-src-account-table, Mode:sbc-sbe-rtg-src-account-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_SRC_ACCOUNT_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-round-robin-table, Mode:sbc-sbe-rtg-round-robin-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_ROUND_ROBIN_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-src-trunk-group-id-table, Mode:sbc-sbe-rtg-src-trunk-group-id-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_SRC_TGID_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-dst-trunk-group-id-table, Mode:sbc-sbe-rtg-dst-trunk-group-id-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_DST_TGID_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-category-table, Mode:sbc-sbe-rtg-category-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_CATEGORY_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-least-cost-table, Mode:sbc-sbe-rtg-least-cost-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_LEAST_COST_TABLE_ENTRY, Command:  entry 1 
+Parent_m:sbc-sbe-callpolicy-rtg-time-table, Mode:sbc-sbe-rtg-time-table-entry, eol_name: cfg_sbc_sbe_routing_table_entry, which_name: CFG_SBC_SBE_RTG_TIME_TABLE_ENTRY, Command:  entry 0 
+Parent_m:ip-sla, Mode:ip-sla-lspPing, eol_name: slaLspPingConfigTypeCommand, which_name: 0, Command:  mpls lsp ping ipv4 1.1.1.1/24 
+Parent_m:ip-sla, Mode:ip-sla-lspTrace, eol_name: slaVccvConfigTypeCommand, which_name: 0, Command:  mpls lsp trace ipv4 1.1.1.1/24 
+Parent_m:configure, Mode:cfg-bs-ds-cmd, eol_name: bs_ds_cmd, which_name: 0, Command:  bulkstat data str_1_s type command 
+Parent_m:configure, Mode:cfg-bs-ds-expr, eol_name: bs_ds_cmd, which_name: 0, Command:  bulkstat data str_1_s type expression 
+Parent_m:configure, Mode:cfg-bs-ds-snmp, eol_name: bs_ds_cmd, which_name: 0, Command:  bulkstat data str_1_s type snmp 
+Parent_m:cfg-bs-ds-expr, Mode:cfg-bs-ds-expr-obj, eol_name: bs_ds_expr_object_cmd, which_name: 0, Command:  object 1 
+Parent_m:configure, Mode:auto-ip-sla-mpls, eol_name: slaMplsConfigCommand, which_name: MPLS_ENTRY, Command:  auto ip sla mpls-lsp-monitor 1 
+Parent_m:auto-ip-sla-mpls, Mode:auto-ip-sla-mpls-params, eol_name: slaMplsCommonConfigCommand, which_name: slaTagMax, Command:  type echo ipsla-vrf-all 
+Parent_m:auto-ip-sla-mpls-params, Mode:auto-ip-sla-mpls-lpd-params, eol_name: slaMplsParamsConfigCommand, which_name: slaTagMplsLpd, Command:  path-discover 
+Parent_m:sbc-h248-bac, Mode:sbc-h248-bac-adj, eol_name: cfg_sbc_h248_bac_adj, which_name: CFG_SBC_H248_BAC_ADJ, Command:  adjacency h248 core str_1_s 
+Parent_m:sbc-h248-bac, Mode:sbc-h248-bac-media-addr, eol_name: cfg_sbc_h248_bac_media_addr, which_name: CFG_SBC_H248_BAC_MEDIA_ADDR, Command:  media-address ipv4 1.1.1.1 
+Parent_m:interface, Mode:isis-intf-affinity, eol_name: isis_int_flex_algo_set_affinity, which_name: ISIS_SR_FLEX_ALGO_INT_AFFINITY_CMD, Command:  isis affinity flex-algo 
+Parent_m:interface, Mode:te-adjacency, eol_name: mpls_te_lm_int_command, which_name: PARSER_LMP_INT_DATALINK_ADJACENCY, Command:  mpls traffic-eng lmp data-link adjacency 
+Parent_m:interface, Mode:ouni-int-adjacency, eol_name: ouni_lm_int_command, which_name: PARSER_LMP_INT_DATALINK_ADJACENCY, Command:  mpls uni lmp data-link adjacency 
+Parent_m:interface, Mode:xconnect-if-config, eol_name: xconnect_config_command, which_name: XCONNECT_CMD_PW, Command:  xconnect 1.1.1.1 1 encapsulation l2tpv3 manual pw-class str_1_s 
+Parent_m:interface, Mode:gmplsifpath, eol_name: gmpls_path_cmd, which_name: 0, Command:  get_from_mode_cmds 
+Parent_m:interface, Mode:port-tagging, eol_name: port_tagging_cmd, which_name: 0, Command:  port-tagging 
+Parent_m:interface, Mode:ospf-if-affinity-flex-algo, eol_name: ospf_intfc_command, which_name: OSPF_IF_FLEX_ALGO_AFF, Command:  ip ospf affinity flex-algo 
+Parent_m:interface, Mode:mplsmfistaticifrewrite, eol_name: mfi_static_intf_fpi_cmd, which_name: 0, Command:  mpls static l2transport 1 
+Parent_m:configure, Mode:ipv6-router, eol_name: ipv6_router_command, which_name: 0, Command:  ipv6 router eigrp 1 
+Parent_m:ipv6-router, Mode:ipv6_router_address-family, eol_name: cfg_ipv6_router_af_submode_command, which_name: 0, Command:  address-family ipv6 vrf str_1_s 
+Parent_m:configure, Mode:casa-config, eol_name: enter_casa_cfg, which_name: 0, Command:  ip casa 1.1.1.1 225.0.0.0 
+Parent_m:router, Mode:scope, eol_name: bgp_scope_command, which_name: 0, Command:  scope global 
+Parent_m:router, Mode:template-peer-policy, eol_name: rtr_peer_tmpl_mode_command, which_name: TEMPLATE_PEER_POLICY, Command:  template peer-policy str_1_s 
+Parent_m:router, Mode:template-peer-session, eol_name: rtr_ses_tmpl_mode_command, which_name: TEMPLATE_PEER_SESSION, Command:  template peer-session str_1_s 
+Parent_m:router, Mode:bgp-address-family, eol_name: bgp_router_af_mode_command, which_name: 0, Command:  address-family   ipv4 
+Parent_m:router, Mode:bgp-bmp-server, eol_name: bgp_bmp_server_mode_entry_command, which_name: 0, Command:  bmp server 1 
+Parent_m:router, Mode:bgp-rs-context, eol_name: bgp_rs_context_mode_entry_command, which_name: 0, Command:  route-server-context str_1_s 
+Parent_m:configure, Mode:router, eol_name: router_command, which_name: 0, Command: router  bgp 1
+Parent_m:scope, Mode:scope-address-family, eol_name: bgp_router_af_mode_command, which_name: 0, Command:  address-family   ipv4 
+Parent_m:scope-address-family, Mode:scope-address-family-topology, eol_name: bgp_scope_af_topo_command, which_name: 0, Command:  topology base 
+Parent_m:bgp-rs-context, Mode:bgp-rs-afctx, eol_name: bgp_rs_afctx_mode_entry_command, which_name: 0, Command:  address-family   ipv4   unicast 
+Parent_m:ip-sla-http, Mode:ip-sla-http-rr, eol_name: slaHttpRRConfigCommand, which_name: slaTagHttpRRCommand, Command:  http-raw-request 
+Parent_m:sbc-sbe-acc, Mode:sbc-sbe-acc-ser, eol_name: cfg_sbc_sbe_radius, which_name: CFG_SBC_SBE_RADIUS_ACCOUNTING_SERVER, Command:  server str_1_s 
+Parent_m:sbc-sbe-subscriber-entry, Mode:sbc-sbe-sub-contact, eol_name: cfg_sbc_sbe_subscriber, which_name: CFG_SBC_SBE_ADJ_SIP_SUB_DEL_CONTACT, Command:  sip-contact str_1_s 
+Parent_m:ssh-pubkey-server, Mode:ssh-pubkey-data, eol_name: ssh_pubkey_command, which_name: PARSER_SSH_PUBKEY_KEY_STRING, Command:  key-string 
+Parent_m:router, Mode:isis-flex-algo, eol_name: isis_flex_rtr_commands, which_name: ISIS_SR_FLEX_ALGO_CMD, Command:  flex-algo 128 
+Parent_m:router, Mode:address-family, eol_name: rtr_af_mode_command, which_name: 0, Command:  address-family   ipv4 
+Parent_m:isis-flex-algo, Mode:isis-rtr-affinity, eol_name: isis_flex_algo_set_affinity, which_name: ISIS_SR_FLEX_ALGO_AFFINITY_CMD, Command:  affinity 
+Parent_m:isis-rtr-affinity, Mode:isis-include-all, eol_name: isis_flex_algo_affinity_attr, which_name: ISIS_SR_FLEX_ALGO_INCL_ALL_CMD, Command:  include-all 
+Parent_m:isis-rtr-affinity, Mode:isis-include-any, eol_name: isis_flex_algo_affinity_attr, which_name: ISIS_SR_FLEX_ALGO_INCL_ANY_CMD, Command:  include-any 
+Parent_m:isis-rtr-affinity, Mode:isis-exclude-any, eol_name: isis_flex_algo_affinity_attr, which_name: ISIS_SR_FLEX_ALGO_EXCL_ANY_CMD, Command:  exclude-any 
+Parent_m:router, Mode:NHRP-address-family, eol_name: rtr_af_mode_command, which_name: 0, Command:  address-family ipv4
+Parent_m:router, Mode:ospf-flex-algo, eol_name: ospf_fa_ui_rtr_command, which_name: 0, Command:  flex-algo 128 
+Parent_m:router, Mode:ospf-affinity-map, eol_name: ospf_fa_ui_aff_map_enter_mode, which_name: 0, Command: affinity-map
+Parent_m:ospf-flex-algo, Mode:ospf-flex-algo-affinity, eol_name: ospf_fa_ui_set_affinity, which_name: OSPF_FLEX_ALGO_INCL_ALL_CMD, Command:  affinity include-all 
+Parent_m:configure, Mode:remote-mgmt, eol_name: csrmgmt_cfg_commands, which_name: CSRMGMT_CFG_REMOTE_MGMT, Command:  remote-management 
+Parent_m:configure, Mode:service-group-glob-mode, eol_name: service_group_glob_cfg_command, which_name: 0, Command:  service-group 1 
+Parent_m:configure, Mode:ethernet-evc-config, eol_name: ether_evc_command, which_name: 1, Command:  ethernet evc str_1_s 
+Parent_m:configure, Mode:ether_cfm_ais, eol_name: cfm_parser_cfg_ais_global, which_name: 0, Command:  ethernet cfm ais link-status global 
+Parent_m:configure, Mode:igmp_profile, eol_name: igmp_profile_command, which_name: 0, Command:  ip igmp profile 1 
+Parent_m:configure, Mode:conf-dia-peer, eol_name: dia_config_cmd, which_name: PARSER_DIAMETER_PEER, Command:  diameter peer str_1_s 
+Parent_m:configure, Mode:conf-dia-attr-list, eol_name: dia_config_cmd, which_name: PARSER_DIAMETER_TEST_ATTR_LIST, Command:  diameter attribute list 0 
+Parent_m:configure, Mode:sampler, eol_name: sampler_submode_command, which_name: 0, Command:  sampler str_1_s 
+Parent_m:configure, Mode:flowrec, eol_name: flow_record_submode_command, which_name: 0, Command:  flow record type performance-monitor str_1_s 
+Parent_m:configure, Mode:flowexp, eol_name: flow_exp_submode_command, which_name: 0, Command:  flow exporter str_1_s 
+Parent_m:configure, Mode:flowmon, eol_name: fnf_mon_submode_command, which_name: 0, Command:  flow monitor str_1_s 
+Parent_m:configure, Mode:export-import-group, eol_name: sxp_cfg_command, which_name: 0, Command: cts sxp export-import-group speaker str_1_s 
+Parent_m:configure, Mode:export-list, eol_name: sxp_cfg_command, which_name: 0, Command: cts sxp export-list str_1_s 
+Parent_m:configure, Mode:filter-group, eol_name: sxp_cfg_command, which_name: 0, Command: cts sxp filter-group speaker str_1_s 
+Parent_m:configure, Mode:filter-list, eol_name: sxp_cfg_command, which_name: 0, Command: cts sxp filter-list str_1_s 
+Parent_m:configure, Mode:import-list, eol_name: sxp_cfg_command, which_name: 0, Command: cts sxp import-list str_1_s 
+Parent_m:configure, Mode:policy-server, eol_name: cts_policy_server_cmd, which_name: CTS_PARSER_POLICY_SERVER_NAME, Command: cts policy-server name str_1_s 
+Parent_m:configure, Mode:cwmp, eol_name: cwmp_agent_config_command, which_name: 0, Command:  cwmp agent 
+Parent_m:configure, Mode:evpn, eol_name: evpn_global_command, which_name: 0, Command:  l2vpn evpn 
+Parent_m:configure, Mode:evpn-es, eol_name: evpn_eth_seg_command, which_name: 0, Command:  l2vpn evpn ethernet-segment 1 
+Parent_m:configure, Mode:device-tracking, eol_name: sisf_glean_policy_command, which_name: 0, Command:  device-tracking policy str_1_s 
+Parent_m:configure, Mode:destguard, eol_name: destguard_command, which_name: 0, Command:  ipv6 destination-guard policy str_1_s 
+Parent_m:configure, Mode:sisf-sourceguard, eol_name: sisf_sourceguard_command, which_name: 0, Command:  ipv6 source-guard policy str_1_s 
+Parent_m:configure, Mode:ip-sla-server-twamp, eol_name: ippm_server_twamp_config_command, which_name: 0, Command:  ip sla server twamp 
+Parent_m:configure, Mode:ip-sla-twamp, eol_name: resp_twamp_config_command, which_name: SLA_RESP_TWAMP_ENABLE, Command:  ip sla responder twamp 
+Parent_m:configure, Mode:transport-map, eol_name: transport_map_command, which_name: 0, Command:  transport-map type persistent webui str_1_s 
+Parent_m:configure, Mode:control-plane, eol_name: control_plane_cmd, which_name: 0, Command:  control-plane 
+Parent_m:configure, Mode:mon-sess-type-erspan-src, eol_name: cfg_mon_sess_type_erspan_src_cmd_ngwc, which_name: 0, Command:  monitor session 1 type erspan-source 
+Parent_m:mon-sess-type-erspan-src, Mode:mon-sess-type-erspan-src-dst, eol_name: cfg_mon_sess_type_erspan_src_dst_cmd_ngwc, which_name: 0, Command:  destination
+Parent_m:configure, Mode:mon-sess-type-local, eol_name: cfg_mon_sess_type_local_cmd, which_name: 0, Command:  monitor session 1 type local 
+Parent_m:configure, Mode:mon-sess-type-local-tx, eol_name: cfg_mon_sess_type_local_egress_only_cmd, which_name: 0, Command:  monitor session 1 type local-tx 
+Parent_m:configure, Mode:virtual-service-global, eol_name: mcprp_appliance_global_sub_mode_cmd, which_name: 0, Command:  virtual-service 
+Parent_m:configure, Mode:mac-enacl, eol_name: mac_commands, which_name: ACL_MAC_NAMED_EXTENDED, Command:  mac access-list extended str_1_s 
+Parent_m:configure, Mode:pp-auto-update, eol_name: stile_nbar_command, which_name: EXEC_NBAR_AUTO_PP_UPDATE, Command:  ip nbar protocol-pack-auto-update 
+Parent_m:configure, Mode:attribute-map, eol_name: stile_nbar_command, which_name: EXEC_NBAR_ATTRIBUTE_MAP, Command:  ip nbar attribute-map str_1_s 
+Parent_m:configure, Mode:custom, eol_name: stile_custom_submode, which_name: EXEC_NBAR_CUSTOM_SUBMODE, Command:  ip nbar custom str_1_s transport udp-tcp 
+Parent_m:configure, Mode:fallback-profile-mode, eol_name: fallback_cfg_command, which_name: FALLBACK_PROFILE, Command:  fallback profile str_1_s 
+Parent_m:configure, Mode:identity-policy-mode, eol_name: identity_cfg_command, which_name: IDENTITY_POLICY, Command:  identity policy str_1_s 
+Parent_m:configure, Mode:eap-mprofile-mode, eol_name: eap_profile_cmd, which_name: EAP_METHOD_PROFILE, Command:  eap method fast profile str_1_s 
+Parent_m:configure, Mode:eap-profile-mode, eol_name: eap_profile_cmd, which_name: EAP_PROFILE, Command:  eap profile str_1_s 
+Parent_m:configure, Mode:dot1x-credential-mode, eol_name: dot1x_cfg_command, which_name: DOT1X_CREDENTIAL, Command:  dot1x credentials str_1_s 
+Parent_m:configure, Mode:config-session-limit-profile, eol_name: access_session_config_command, which_name: ACCESS_SESSION_CFG_SESSION_LIMIT, Command:  access-session limit profile name str_1_s 
+Parent_m:configure, Mode:config-com-filter-list, eol_name: access_session_config_command, which_name: ACCESS_SESSION_CFG_COMMON_FILTER_LIST, Command:  access-session attributes filter-list list str_1_s 
+Parent_m:configure, Mode:parameter-submode, eol_name: pre_parameter_map_eol_func, which_name: 0, Command:  parameter-map type webauth str_1_s
+Parent_m:configure, Mode:map-filter, eol_name: pre_parameter_map_type_subscriber_eol, which_name: 0, Command:  parameter-map type subscriber attribute-to-service str_1_s
+Parent_m:configure, Mode:filter-submode, eol_name: pre_cmap_control_extend_command_eol_func, which_name: 0, Command:  class-map type control subscriber match-all str_1_s
+Parent_m:configure, Mode:bfd-template, eol_name: bfd_template_config_command, which_name: 0, Command:  bfd-template single-hop str_1_s 
+Parent_m:configure, Mode:aaa-attr-list, eol_name: aaa_attr_list_cli_entry_command, which_name: PARSER_AAA_ATTR_LIST_CLI, Command:  aaa attribute list str_1_s 
+Parent_m:configure, Mode:ANCP, eol_name: ancp_config_command, which_name: ANCP_NEIGHBOR, Command:  ancp neighbor name str_2_s id str_1_s 
+Parent_m:configure, Mode:bba-group, eol_name: bba_group_command, which_name: 0, Command:  bba-group pppoe global 
+Parent_m:configure, Mode:subscriber-policy, eol_name: subscriber_policy_command, which_name: SUBSCRIBER_POLICY_NUM, Command:  subscriber-policy 1 
+Parent_m:configure, Mode:cfg-bs-profile, eol_name: bs_profile_cmd, which_name: 0, Command:  bulkstat profile str_1_s 
+Parent_m:configure, Mode:cfg-bs-fs, eol_name: bs_fs_cmd, which_name: 0, Command:  bulkstat filter str_1_s 
+Parent_m:configure, Mode:bs-schedule, eol_name: cfg_bs_schedule_cmd, which_name: 0, Command:  bulkstat schedule str_1_s at 11:11 recurring 
+Parent_m:configure, Mode:bulkstat-transfer, eol_name: configure_bulkstat, which_name: BULKSTAT_SNMP_TRANSFER, Command:  snmp mib bulkstat transfer str_1_s 
+Parent_m:configure, Mode:bulkstat-schemadef, eol_name: configure_bulkstat, which_name: BULKSTAT_SNMP_SCHEMADEF, Command:  snmp mib bulkstat schema str_1_s 
+Parent_m:configure, Mode:bulkstat-objlist, eol_name: configure_bulkstat, which_name: BULKSTAT_SNMP_OBJLIST, Command:  snmp mib bulkstat object-list str_1_s 
+Parent_m:configure, Mode:profile-map, eol_name: aaa_sg_cache_profile_map_block_entry_command, which_name: 0, Command:  aaa cache profile str_1_s 
+Parent_m:configure, Mode:tlv-list, eol_name: cdp_tlv_list_command, which_name: 0, Command:  cdp tlv-list str_1_s 
+Parent_m:configure, Mode:cns-connect-config, eol_name: cns_connect_command, which_name: 0, Command:  cns connect str_1_s ping-interval 1 retries 1 timeout 10 
+Parent_m:configure, Mode:cns-connect-intf-config, eol_name: cns_connect_intf_command, which_name: 0, Command:  cns config connect-intf str_1_s number 1 ping-interval 1 retries 1 
+Parent_m:configure, Mode:cns-tmpl-connect-config, eol_name: cns_template_connect_command, which_name: 0, Command:  cns template connect str_1_s 
+Parent_m:configure, Mode:map-class, eol_name: mapclass_command, which_name: 0, Command:  map-class frame-relay str_1_s 
+Parent_m:configure, Mode:map-list, eol_name: maplist_command, which_name: 0, Command:  map-list str_1_s 
+Parent_m:configure, Mode:acct_mlist, eol_name: aaa_command, which_name: PARSER_ACCT_LIST, Command:  aaa accounting vrrs default 
+Parent_m:configure, Mode:conf-sg-diameter, eol_name: aaa_command, which_name: PARSER_AAA_GROUP_SERVER, Command:  aaa group server diameter str_1_s 
+Parent_m:configure, Mode:conf-ldap-sg, eol_name: aaa_command, which_name: PARSER_AAA_GROUP_SERVER, Command:  aaa group server ldap str_1_s 
+Parent_m:configure, Mode:sg-radius, eol_name: aaa_command, which_name: PARSER_AAA_GROUP_SERVER, Command:  aaa group server radius str_1_s 
+Parent_m:configure, Mode:sg-tacacs+, eol_name: aaa_command, which_name: PARSER_AAA_GROUP_SERVER, Command:  aaa group server tacacs+ str_1_s 
+Parent_m:configure, Mode:aaa-user, eol_name: aaa_command, which_name: PARSER_AAA_USER, Command:  aaa user profile str_1_s 
+Parent_m:configure, Mode:cc-policy, eol_name: aaa_cc_wrapper_entry, which_name: 0, Command:  aaa common-criteria policy str_1_s 
+Parent_m:configure, Mode:user-name, eol_name: username_new_command, which_name: 0, Command:  user-name str_1_s 
+Parent_m:configure, Mode:view, eol_name: view_configure_command, which_name: 0, Command:  parser view str_1_s superview 
+Parent_m:configure, Mode:line, eol_name: line_command, which_name: LINE_NUMBER, Command:  line  0 1  
+Parent_m:configure, Mode:hostlist, eol_name: hostlist_mode_command, which_name: 0, Command:  ip host-list str_1_s 
+Parent_m:configure, Mode:dhcp-global-options, eol_name: dhcpd_global_options_command, which_name: 0, Command:  ip dhcp global-options 
+Parent_m:configure, Mode:dnis-group, eol_name: dnis_group_main_command, which_name: 0, Command:  dialer dnis group str_1_s 
+Parent_m:configure, Mode:clid-group, eol_name: clid_group_main_command, which_name: 0, Command:  dialer clid group str_1_s 
+Parent_m:configure, Mode:sr_sf_listen_cfg, eol_name: sr_sf_tcp_listen_eols, which_name: SR_CFG_SF_XMCP_TCP_LISTEN_CMD, Command:  service-family external-client listen ipv4 1024 
+Parent_m:configure, Mode:event-objlist, eol_name: configure_eventmib, which_name: SNMP_EVENT_OBJLIST, Command:  snmp mib event object list owner str_1_s name str_1_s 1 
+Parent_m:configure, Mode:tracking-config, eol_name: track_command_ios, which_name: TRACK_CMD_OBJECT, Command:  track 1 endpoint-tracker 
+Parent_m:configure, Mode:conf-ldap-server, eol_name: ldap_global_cmd, which_name: PARSER_LDAP_SERVER, Command:  ldap server str_1_s 
+Parent_m:configure, Mode:conf-attr-map, eol_name: ldap_global_cmd, which_name: PARSER_LDAP_ATTR_MAP, Command:  ldap attribute-map str_1_s 
+Parent_m:configure, Mode:ip-portbundle, eol_name: ip_portbundle_command, which_name: IP_PORTBUNDLE_MODE, Command:  ip portbundle 
+Parent_m:configure, Mode:dhcp-sip-class, eol_name: dhcp_sip_class_command, which_name: 0, Command:  ip dhcp-sip class str_1_s 
+Parent_m:configure, Mode:ipsub-server-list, eol_name: ipsub_list_command, which_name: 0, Command:  ip subscriber list str_1_s 
+Parent_m:configure, Mode:mdns-sd, eol_name: service_routing_mdns_eols, which_name: CFG_MDNS_CMD, Command:  service-routing mdns-sd 
+Parent_m:configure, Mode:config-mdns-sd-sl, eol_name: mdns_sl_command, which_name: 0, Command:  service-list mdns-sd str_1_s deny 0 
+Parent_m:configure, Mode:config-mdns-sd-se, eol_name: cfg_mdns_service_export, which_name: 0, Command:  service-export mdns-sd controller str_1_s 
+Parent_m:configure, Mode:config-mdns-sd, eol_name: mdns_gateway_command, which_name: 0, Command:  mdns-sd gateway 
+Parent_m:configure, Mode:config-mdns-ser-pol, eol_name: mdns_sd_service_policy_command, which_name: 0, Command:  mdns-sd service-policy str_1_s 
+Parent_m:configure, Mode:config-mdns-sl-in, eol_name: mdns_sd_service_list_in_command, which_name: 0, Command:  mdns-sd service-list str_1_s IN 
+Parent_m:configure, Mode:config-mdns-sl-out, eol_name: mdns_sd_service_list_out_command, which_name: 0, Command:  mdns-sd service-list str_1_s OUT 
+Parent_m:configure, Mode:config-mdns-ser-def, eol_name: mdns_sd_service_definition_command, which_name: 0, Command:  mdns-sd service-definition str_1_s 
+Parent_m:configure, Mode:config-mdns-location_filter, eol_name: mdns_sd_location_filter_command, which_name: 0, Command:  mdns-sd location-filter str_1_s 
+Parent_m:configure, Mode:dns-view, eol_name: dns_view_command, which_name: 0, Command:  ip dns view str_1_s 
+Parent_m:configure, Mode:mrm-manager, eol_name: mrm_manager_commands, which_name: 0, Command:  ip mrm manager str_1_s 
+Parent_m:configure, Mode:multicast-flows-classmap, eol_name: ipmcast_classmap_command, which_name: 0, Command:  class-map type multicast-flows str_1_s 
+Parent_m:configure, Mode:ipenacl, eol_name: ip_nacl_command, which_name: ACL_IP_NAMED_EXTENDED, Command:  ip access-list extended str_1_s 
+Parent_m:configure, Mode:ipsnacl, eol_name: ip_nacl_command, which_name: ACL_IP_NAMED_SIMPLE, Command:  ip access-list standard str_1_s 
+Parent_m:configure, Mode:network-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command:  object-group network str_2_s 
+Parent_m:configure, Mode:security-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command:  object-group security str_2_s 
+Parent_m:configure, Mode:service-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command:  object-group service str_1_s 
+Parent_m:configure, Mode:v6network-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command:  object-group v6-network str_1_s 
+Parent_m:configure, Mode:v6service-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command:  object-group v6-service str_1_s 
+Parent_m:configure, Mode:ipnat-pool, eol_name: ip_nat_command, which_name: IPNAT_POOL, Command:  ip nat pool str_1_s netmask 1.1.1.1 type match-host 
+Parent_m:configure, Mode:policy-list, eol_name: policylist_command, which_name: 0, Command:  ip policy-list str_1_s deny 
+Parent_m:configure, Mode:route-map, eol_name: route_map_command, which_name: 0, Command:  route-map str_1_s 
+Parent_m:configure, Mode:extcomm-list, eol_name: ip_extcommunity_command, which_name: 0, Command:  ip extcommunity-list 1 
+Parent_m:configure, Mode:ipv6acl, eol_name: ipv6_acl_command, which_name: IPV6_ACL_EXTENDED, Command:  ipv6 access-list str_1_s 
+Parent_m:configure, Mode:ipv6fqdnacl, eol_name: ipv6_acl_command, which_name: IPV6_ACL_FQDN, Command:  ipv6 access-list fqdn str_1_s 
+Parent_m:configure, Mode:ipv6rbacl, eol_name: ipv6_acl_command, which_name: IPV6_ACL_ROLE_BASED, Command:  ipv6 access-list role-based str_1_s 
+Parent_m:configure, Mode:kron-occurrence, eol_name: cfg_kron_occurrence_cmd, which_name: 0, Command:  kron occurrence str_1_s at 11:11 1 oneshot 
+Parent_m:configure, Mode:kron-policy, eol_name: cfg_kron_policy_cmd, which_name: 0, Command:  kron policy-list str_1_s 
+Parent_m:configure, Mode:config-l2tp-class, eol_name: l2tp_class_entry_command, which_name: L2TP_CLASS, Command:  l2tp-class str_1_s 
+Parent_m:configure, Mode:sg-l4redirect-group, eol_name: l4redirect_command, which_name: SG_L4_REDIRECT_SERVER_GROUP, Command:  redirect server-group str_1_s 
+Parent_m:configure, Mode:custom-location-config, eol_name: lim_config_custom_location_id_cmd, which_name: 0, Command:  location custom-location identifier str_1_s 
+Parent_m:configure, Mode:geo-location-config, eol_name: lim_config_geo_location_id_cmd, which_name: 0, Command:  location geo-location identifier str_1_s 
+Parent_m:configure, Mode:civic-location-config, eol_name: lim_config_civic_location_id_cmd, which_name: 0, Command:  location civic-location identifier str_1_s 
+Parent_m:configure, Mode:pnp-xep-init-config, eol_name: pnpa_initiator_cfg_command, which_name: 0, Command:  pnp profile str_1_s 
+Parent_m:configure, Mode:pnp-xep-listener, eol_name: pnpa_listener_cfg_command, which_name: 0, Command:  pnp listener str_1_s 
+Parent_m:configure, Mode:qosclassmap, eol_name: classmap_cmd, which_name: 0, Command:  class-map str_1_s 
+Parent_m:configure, Mode:radius-attrl, eol_name: radius_cfgcmd, which_name: RADIUS_ATTRIBUTE_LIST, Command:  radius-server attribute list str_1_s 
+Parent_m:configure, Mode:conf-rad-filter, eol_name: radius_global_cmd, which_name: PARSER_RADIUS_FILTER, Command:  radius filter match-all str_1_s 
+Parent_m:configure, Mode:conf-rad-server, eol_name: radius_global_cmd, which_name: PARSER_RADIUS_SERVER, Command:  radius server str_1_s 
+Parent_m:configure, Mode:rib_rwatch_test, eol_name: rib_rwatch_test_cfg_set_mode, which_name: 0, Command:  rwatch 
+Parent_m:configure, Mode:rsvp-local-policy, eol_name: rsvp_policy_provider_cfg_cmd, which_name: RSVP_POLICY_SOURCE_LOCAL | RSVP_POLICY_LOCAL_MODE_ENTER_CMD, Command:  ip rsvp policy local default 
+Parent_m:configure, Mode:SASL-profile, eol_name: sasl_cfg_command, which_name: SASL_CFG_PROFILE, Command: sasl profile str_1_s 
+Parent_m:configure, Mode:sep-init-config, eol_name: sepi_cfg_command, which_name: 0, Command: wsma profile initiator str_1_s 
+Parent_m:configure, Mode:sep-listen-config, eol_name: sepl_cfg_command, which_name: 0, Command: wsma profile listener str_1_s 
+Parent_m:configure, Mode:control-class-map, eol_name: classmap_subscriber_control_command, which_name: 0, Command:  class-map type control str_1_s 
+Parent_m:configure, Mode:traffic-class-map, eol_name: classmap_subscriber_traffic_command, which_name: 0, Command:  class-map type traffic match-any str_1_s 
+Parent_m:configure, Mode:rule-map, eol_name: policymap_subscriber_control_command, which_name: 0, Command:  policy-map type control str_1_s 
+Parent_m:configure, Mode:sg_pm_prepaid, eol_name: sg_pm_prepaid_config_command, which_name: 0, Command: sss feature prepaid str_1_s 
+Parent_m:configure, Mode:conf-tac-server, eol_name: tacacs_global_cmd, which_name: PARSER_TACACS_SERVER, Command:  tacacs server str_1_s 
+Parent_m:configure, Mode:trange, eol_name: trange_command, which_name: 0, Command:  time-range str_1_s 
+Parent_m:configure, Mode:global_template, eol_name: template_global_entry_command, which_name: 1, Command:  template global str_1_s 
+Parent_m:configure, Mode:vrrs, eol_name: vrrs_command, which_name: 0, Command:  vrrs str_1_s 
+Parent_m:configure, Mode:wsma-notify-agent, eol_name: wsma_cfg_command, which_name: PARSER_CFG_WSMA_NOTIFY, Command: wsma agent notify 
+Parent_m:configure, Mode:wsma-filesys-agent, eol_name: wsma_cfg_command, which_name: PARSER_CFG_WSMA_FILESYS, Command: wsma agent filesys 
+Parent_m:configure, Mode:wsma-config-agent, eol_name: wsma_cfg_command, which_name: PARSER_CFG_WSMA_CONFIG, Command: wsma agent config 
+Parent_m:configure, Mode:wsma-exec-agent, eol_name: wsma_cfg_command, which_name: PARSER_CFG_WSMA_EXEC, Command: wsma agent exec 
+Parent_m:configure, Mode:xmpp-config-agent, eol_name: xmpp_agent_cfg_command, which_name: PARSER_CFG_XMPP_CONFIG, Command: xmpp agent config 
+Parent_m:configure, Mode:xmpp-exec-agent, eol_name: xmpp_agent_cfg_command, which_name: PARSER_CFG_XMPP_EXEC, Command: xmpp agent exec 
+Parent_m:configure, Mode:x25-profile, eol_name: x25pr_global_command, which_name: X25LIB_PROFILE, Command:  x25 profile str_1_s 
+Parent_m:configure, Mode:config-x25-huntgroup, eol_name: x25_huntgroup_command, which_name: 0, Command:  x25 hunt-group str_1_s rotary 
+Parent_m:configure, Mode:vrf-list, eol_name: vrf_list_mode_enter, which_name: 0, Command:  vrf list str_1_s 
+Parent_m:configure, Mode:crypto-ca-cert-pool, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_CERT_POOL, Command:  crypto pki certificate pool 
+Parent_m:configure, Mode:crypto-ca-cert-map, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_CERT_MAP, Command:  crypto pki certificate map str_1_s 1 
+Parent_m:configure, Mode:crypto-ca-profile-enroll, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_CERT_ENROLL_PROF, Command:  crypto pki profile enrollment str_1_s 
+Parent_m:configure, Mode:crypto-ca-trustpool, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_TRUST_POOL_DEFINITION, Command:  crypto pki trustpool policy 
+Parent_m:configure, Mode:crypto-ca-trustpoint, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_TRUST_POINT_DEFINITION, Command:  crypto pki trustpoint str_1_s 
+Parent_m:configure, Mode:crypto-cs-server, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CS, Command:  crypto pki server str_1_s 
+Parent_m:configure, Mode:crypto-tti-petitioner, eol_name: crypto_wui_tti, which_name: PARSER_CRYPTO_TTI_PETITIONER, Command:  crypto provisioning petitioner 
+Parent_m:configure, Mode:tls-profile, eol_name: syslog_tls_profile_command, which_name: 0, Command:  logging tls-profile str_1_s 
+Parent_m:configure, Mode:crypto-ikmp-browser-proxy, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp client configuration browser-proxy str_1_s 
+Parent_m:configure, Mode:crypto-ikmp-group, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp client configuration group str_1_s 
+Parent_m:configure, Mode:crypto-ikmp-client-fw, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp client firewall str_1_s optional cisco-integrated-client-firewall 
+Parent_m:configure, Mode:crypto-ikmp-peer, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp peer address 1.1.1.1 
+Parent_m:configure, Mode:crypto-ikmp, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp policy 1 
+Parent_m:configure, Mode:isakmp-profile, eol_name: crypto_isakmp_command, which_name: 0, Command:  crypto isakmp profile str_1_s 
+Parent_m:configure, Mode:crypto-map, eol_name: crypto_map_command, which_name: PARSER_CRYPTO_MAP_GLOBAL, Command:  crypto map str_1_s 1 gdoi 
+Parent_m:configure, Mode:crypto-identity, eol_name: crypto_identity_command, which_name: PARSER_CRYPTO_IDENTITY_GLOBAL, Command:  crypto identity str_1_s 
+Parent_m:configure, Mode:crypto-ipsec-profile, eol_name: crypto_ipsec_profile_cmd, which_name: 0, Command:  crypto ipsec profile str_1_s 
+Parent_m:configure, Mode:ikev2-flexvpn, eol_name: crypto_ikev2_client_flexvpn_cmd, which_name: 0, Command:  crypto ikev2 client flexvpn str_1_s 
+Parent_m:configure, Mode:ikev2-cluster, eol_name: crypto_ikev2_cluster_cmd, which_name: PARSER_CLB, Command:  crypto ikev2 cluster 
+Parent_m:configure, Mode:tls_tunnel, eol_name: crypto_tls_tunnel_command, which_name: PARSER_CRYPTO_TLS_TUNNEL, Command:  crypto tls-tunnel str_1_s 
+Parent_m:configure, Mode:sks_client, eol_name: crypto_sks_client_command, which_name: PARSER_CRYPTO_SKS_CLIENT, Command:  crypto sks-client str_1_s 
+Parent_m:configure, Mode:crypto-transform, eol_name: crypto_ipsec_transform_command, which_name: PARSER_CRYPTO_TRANS_GLOBAL, Command:  crypto ipsec transform-set str_1_s esp-192-aes 
+Parent_m:configure, Mode:ssl_proposal, eol_name: crypto_ssl_proposal_command, which_name: PARSER_CRYPTO_SSL_PROPOSAL, Command:  crypto ssl proposal str_1_s 
+Parent_m:configure, Mode:ssl_profile, eol_name: crypto_ssl_profile_command, which_name: PARSER_CRYPTO_SSL_PROFILE, Command:  crypto ssl profile str_1_s 
+Parent_m:configure, Mode:ssl_policy, eol_name: crypto_ssl_policy_command, which_name: PARSER_CRYPTO_SSL_POLICY, Command:  crypto ssl policy str_1_s 
+Parent_m:configure, Mode:ssl_auth_policy, eol_name: crypto_ssl_auth_policy_command, which_name: PARSER_CRYPTO_SSL_AUTHOR_POLICY, Command:  crypto ssl authorization policy str_1_s 
+Parent_m:configure, Mode:appnav-controller-group, eol_name: service_controller_service_insertion_command, which_name: SERVICE_CONTROLLER_SCG_NAME, Command:  service-insertion appnav-controller-group str_1_s 
+Parent_m:configure, Mode:service-node-group, eol_name: service_controller_service_insertion_command, which_name: SERVICE_CONTROLLER_SNG_NAME, Command:  service-insertion service-node-group str_1_s 
+Parent_m:configure, Mode:service-path, eol_name: service_chain_commands, which_name: SERVICE_PATH_ID, Command:  service-chain service-path 1 
+Parent_m:configure, Mode:service-function, eol_name: service_chain_commands, which_name: SERVICE_FUNCTION_NAME, Command:  service-chain service-function str_1_s 
+Parent_m:configure, Mode:service-function-forwarder, eol_name: service_chain_commands, which_name: SERVICE_FUNCTION_FORWARDER_NAME, Command:  service-chain service-function-forwarder str_1_s 
+Parent_m:configure, Mode:seczonecfg, eol_name: zone_conf_command, which_name: 0, Command:  zone security str_1_s 
+Parent_m:configure, Mode:et-analytics-submode, eol_name: mcprp_tv_command, which_name: 0, Command:  et-analytics 
+Parent_m:configure, Mode:cns_inventory_submode, eol_name: cns_inventory_command, which_name: 0, Command:  cns inventory 
+Parent_m:configure, Mode:vc-group, eol_name: frf5_vc_group_command, which_name: 0, Command:  vc-group str_1_s 
+Parent_m:configure, Mode:cfg-pt-ruleset, eol_name: pt_ruleset_config, which_name: 0, Command:  translate ruleset str_1_s from pad to telnet 
+Parent_m:configure, Mode:control-plane-host-mode, eol_name: cp_subif_cmd, which_name: 0x2, Command:  control-plane host 
+Parent_m:configure, Mode:mpls-label-stack, eol_name: mfi_cfg_label_stack_command, which_name: 0, Command:  mpls outlabel-stack reservation 
+Parent_m:configure, Mode:ldplbl, eol_name: ldp_ios_label_cfg_command, which_name: 0, Command:  mpls ldp label 
+Parent_m:configure, Mode:traffic-eng, eol_name: mpls_te_lm_nbr_command, which_name: 0, Command:  mpls traffic-eng lmp neighbor name str_1_s 
+Parent_m:configure, Mode:lsp-attribute-list, eol_name: lsp_attrs_command, which_name: 0, Command:  mpls traffic-eng lsp attributes str_1_s 
+Parent_m:configure, Mode:cfg-pathoption-list, eol_name: rrr_popt_list_command, which_name: 0, Command:  mpls traffic-eng path-option list identifier 1 
+Parent_m:configure, Mode:ip-explicit-path-p2p, eol_name: ip_expl_paths_command, which_name: 0, Command:  ip explicit-path identifier 1 
+Parent_m:configure, Mode:te-class, eol_name: rrr_dste_te_class_cmds, which_name: 0, Command:  mpls traffic-eng ds-te te-classes 
+Parent_m:configure, Mode:tp, eol_name: mpls_tp_global_config, which_name: 0, Command:  mpls tp 
+Parent_m:configure, Mode:oam, eol_name: lspv_cfg_command, which_name: 0, Command:  mpls oam 
+Parent_m:configure, Mode:l3vpn, eol_name: tun_l3vpn_encap_ip_cfg, which_name: 0, Command:  l3vpn encapsulation ip str_1_s 
+Parent_m:configure, Mode:config-st-pw-oam-class, eol_name: st_pw_oam_top_command, which_name: 0, Command:  l2vpn pseudowire static-oam class str_1_s 
+Parent_m:configure, Mode:mobile-map, eol_name: mip_mobile_map_command, which_name: 0, Command:  ip mobile mobile-map str_1_s 
+Parent_m:configure, Mode:mcsa, eol_name: mcsa_command, which_name: 0, Command:  mcsa 
+Parent_m:configure, Mode:pseudowire-class, eol_name: pw_class_config_command, which_name: 0, Command:  pseudowire-class str_1_s 
+Parent_m:configure, Mode:l2vpn-xc, eol_name: xconnect_xc_context_command, which_name: 0, Command:  l2vpn xconnect context str_1_s 
+Parent_m:configure, Mode:pw-tlv-template, eol_name: pw_tlv_template_config_command, which_name: L2VPN_PW_TLV_TEMPLATE_CMD, Command:  pseudowire-tlv template str_1_s 
+Parent_m:configure, Mode:l2-pw-rtg, eol_name: l2_pw_rtg_command, which_name: L2VPN_PW_RTG_CMD, Command:  l2 pseudowire routing 
+Parent_m:configure, Mode:lisp-site, eol_name: lisp_os_ios_cfg_command, which_name: LISP_CONFIG_SITE, Command:  lisp site str_1_s 
+Parent_m:configure, Mode:mstp_cfg, eol_name: mstp_config_command, which_name: CONF_ENTER, Command:  spanning-tree mst configuration 
+Parent_m:configure, Mode:pseudo_info, eol_name: stp_cfg_pseudo_info_command, which_name: CFG_PSEUDO_INFO_TX, Command:  spanning-tree pseudo-information transmit 1 
+Parent_m:configure, Mode:flow-file-export-submode, eol_name: fnf_agg_cfg_enter_submode, which_name: 0, Command:  flow file-export default 
+Parent_m:configure, Mode:md-app-entry, eol_name: fmd_app_entry_cmd, which_name: 0, Command:  metadata application-params str_1_s 
+Parent_m:configure, Mode:md-entry, eol_name: fmd_entry_cmd, which_name: 0, Command:  metadata flow entry str_1_s 
+Parent_m:configure, Mode:md-flowspec, eol_name: fmd_flow_spec_cmd, which_name: 0, Command:  metadata flow flow-specifier str_1_s 
+Parent_m:configure, Mode:md-session-params, eol_name: fmd_ses_params_cmd, which_name: 0, Command:  metadata flow session-params str_1_s 
+Parent_m:configure, Mode:mmon-fmon, eol_name: mma_fmon_command, which_name: 0, Command:  flow monitor type performance-monitor str_1_s 
+Parent_m:configure, Mode:apm-context, eol_name: apm_cfg_ctx_command, which_name: 0, Command:  performance monitor context str_1_s profile   application-experience 
+Parent_m:configure, Mode:config-route-profile, eol_name: vxlan_route_profile_cmd, which_name: VXLAN_ROUTE_PROFILE_MODE, Command:  vxlan route-profile str_1_s 
+Parent_m:configure, Mode:config-vxlan-static-route, eol_name: vxlan_static_route_cmd, which_name: VXLAN_STATIC_ROUTE_MODE, Command:  vxlan static-route 
+Parent_m:configure, Mode:dspfarmprofile, eol_name: dspfarm_cfg_profile_generic, which_name: DSPFARM_CONFIG_GLOB_PROFILE, Command:  dspfarm profile 1 conference 
+Parent_m:configure, Mode:signaling-class, eol_name: sigclass_main_command, which_name: SIGCLASS_MAIN_COMMAND, Command:  signaling-class cas str_1_s 
+Parent_m:configure, Mode:gateway, eol_name: config_gateway, which_name: 0, Command:  gateway 
+Parent_m:configure, Mode:sip-ua, eol_name: config_sip_ua, which_name: 0, Command:  sip-ua 
+Parent_m:configure, Mode:voicednismaps, eol_name: vdm_set_mode, which_name: 0, Command:  voice dnis-map str_1_s 
+Parent_m:configure, Mode:mgcpprofile, eol_name: mgcp_cfg_commands, which_name: MGCP_CONFIG_GLOB_PROFILE, Command:  mgcp profile str_1_s 
+Parent_m:configure, Mode:translation-rule, eol_name: config_translation_rule, which_name: TRANSLATION_RULE, Command:  translation-rule 1 
+Parent_m:configure, Mode:gw-accounting-file, eol_name: config_gateway_acct, which_name: GW_ACCT_FILE, Command:  gw-accounting file 
+Parent_m:configure, Mode:gw-accounting-aaa, eol_name: config_gateway_acct, which_name: GW_ACCT_AAA, Command:  gw-accounting aaa 
+Parent_m:configure, Mode:voipdpcor, eol_name: dialpeer_config_cor_name, which_name: 0, Command:  dial-peer cor custom 
+Parent_m:configure, Mode:voice-cause-code, eol_name: voice_cause_code_config, which_name: 0, Command:  voice cause-code 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_TENANT, Command:  voice class tenant 10 
+Parent_m:configure, Mode:voicecl-dt-detect, eol_name: voice_class_config_top, which_name: VOICE_CLASS_DUALTONE_DETECT, Command:  voice class dualtone-detect-params 1 
+Parent_m:configure, Mode:hunt-group, eol_name: config_voice_huntgrp, which_name: HUNTGRP_TYPE_PARALLEL, Command:  voice hunt-group 1 parallel 
+Parent_m:configure, Mode:moh-group, eol_name: config_voice_mohgrp, which_name: 0, Command:  voice moh-group 1 
+Parent_m:configure, Mode:cause-code-list, eol_name: cclist_vccmd, which_name: VC_CAUSE_CODE_TAG_CMD, Command:  voice class cause-code 1 
+Parent_m:configure, Mode:translation-profile, eol_name: regxrule_profile_cfg_command, which_name: REGXRULE_PROFILE_CONFIG, Command:  voice translation-profile str_1_s 
+Parent_m:configure, Mode:regex-translation-rule, eol_name: regxrule_rule_cfg_command, which_name: REGXRULE_RULE_CONFIG, Command:  voice translation-rule 1 
+Parent_m:configure, Mode:enum_rule, eol_name: config_enum_match_table, which_name: 1, Command:  voice enum-match-table 1 
+Parent_m:configure, Mode:call-filter-matchlist, eol_name: callfilter_config_top, which_name: GCFM_LIST_VOICE, Command: call filter match-list 1 voice 
+Parent_m:configure, Mode:voip-trunk-group, eol_name: voip_tgrm_command, which_name: 0, Command:  voip trunk group str_1_s 
+Parent_m:configure, Mode:sccpplar, eol_name: sccp_cfg_commands, which_name: SCCP_CFG_GLOB_PLAR, Command:  sccp plar 
+Parent_m:configure, Mode:sccpccmgroup, eol_name: sccp_cfg_commands, which_name: SCCP_CFG_GLOB_CCM_GROUP, Command:  sccp ccm group 1 
+Parent_m:configure, Mode:stcappfac, eol_name: stcapp_fac_cmd, which_name: STCAPP_CFG_GLOB_FAC, Command:  stcapp feature access-code 
+Parent_m:configure, Mode:stcappfsd, eol_name: stcapp_fsd_cmd, which_name: STCAPP_CFG_GLOB_FSD, Command:  stcapp feature speed-dial 
+Parent_m:configure, Mode:stcappcbb, eol_name: stcapp_cbb_cmd, which_name: STCAPP_CFG_GLOB_CBB, Command:  stcapp feature callback 
+Parent_m:configure, Mode:stcappfmcode, eol_name: stcapp_fmcode_cmd, which_name: STCAPP_CFG_CNTL_MODE_FEA, Command:  stcapp call-control mode feature 
+Parent_m:configure, Mode:emergency-response-location, eol_name: config_voice_e911_location_cmd, which_name: 0, Command:  voice emergency response location 1 
+Parent_m:configure, Mode:emergency-response-zone, eol_name: config_voice_e911_zone_cmd, which_name: 0, Command:  voice emergency response zone 1 
+Parent_m:configure, Mode:emergency-response-settings, eol_name: config_voice_e911_settings_cmd, which_name: 0, Command:  voice emergency response settings 
+Parent_m:configure, Mode:lpcor-iptrunk-subnet, eol_name: vlpcor_iptrunk_subnet_command, which_name: VLPCOR_IPTRUNK_SUBNET, Command:  voice lpcor ip-trunk subnet incoming 
+Parent_m:configure, Mode:lpcor-ipphone-subnet, eol_name: vlpcor_ipphone_subnet_command, which_name: VLPCOR_IPPHONE_SUBNET, Command:  voice lpcor ip-phone subnet incoming 
+Parent_m:configure, Mode:lpcor-custom, eol_name: vlpcor_custom_command, which_name: VLPCOR_CUSTOM, Command:  voice lpcor custom 
+Parent_m:configure, Mode:source-group, eol_name: sipg_command, which_name: SG_CONFIG, Command:  voice source-group str_1_s 
+Parent_m:configure, Mode:voice-mlpp, eol_name: config_voice_mlpp_cmd, which_name: 0, Command:  voice mlpp 
+Parent_m:configure, Mode:dsapplinefac, eol_name: dsappline_fac_cmd, which_name: DSAPPLINE_CFG_GLOB_FAC, Command:  dsapp line feature access-code 
+Parent_m:configure, Mode:ephone-type, eol_name: config_ephone_type_keyword, which_name: 0, Command:  ephone-type overwrite 
+Parent_m:configure, Mode:logout_profile_mode, eol_name: cfg_logout_profile, which_name: 0, Command:  voice logout-profile 1 
+Parent_m:configure, Mode:user_profile_mode, eol_name: cfg_user_profile, which_name: 0, Command:  voice user-profile 1 
+Parent_m:configure, Mode:voice-register-pooltype, eol_name: config_voice_register_pooltype_keyword, which_name: 0, Command:  voice register pool-type str_1_s 
+Parent_m:configure, Mode:presence, eol_name: cfg_pres_command, which_name: 0, Command:  presence 
+Parent_m:configure, Mode:credentials, eol_name: config_ctlprovider_command, which_name: 0, Command:  credentials 
+Parent_m:configure, Mode:capf-server, eol_name: config_capf_server_command, which_name: 0, Command:  capf-server 
+Parent_m:configure, Mode:ctl-client, eol_name: config_ctl_client, which_name: 0, Command:  ctl-client 
+Parent_m:configure, Mode:Ingress-class-map, eol_name: mcprp_plim_template_entry, which_name: 0, Command:  ingress-class-map 1 
+Parent_m:configure, Mode:filterserver, eol_name: aaa_command, which_name: PARSER_AAA_FLTSV, Command:  aaa cache filterserver
+Parent_m:configure, Mode:otv_site, eol_name: otv_app_command, which_name: OTV_APP_SITE_BD, Command:  otv site bridge-domain 2048 
+Parent_m:configure, Mode:service-template-mode, eol_name: identity_cfg_command, which_name: IDENTITY_POLICY, Command:  service-template str_1_s 
+Parent_m:configure, Mode:vpdn-template, eol_name: l2x_group_entry_command, which_name: VPDN_TEMPLATE, Command:  vpdn-template str_1_s 
+Parent_m:configure, Mode:mobile-router, eol_name: mobrouter_command_mode, which_name: 0, Command:  ip mobile router 
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_POTS, Command:  dial-peer data 1 pots 
+Parent_m:configure, Mode:dp-auto, eol_name: config_dp_auto_top, which_name: 0, Command:  dial-peer group 1 pots 
+Parent_m:configure, Mode:codec-profile, eol_name: encap_codec_profile_cfg, which_name: 0, Command:  codec profile 1 aacld 
+Parent_m:configure, Mode:lpcor-policy, eol_name: vlpcor_policy_command, which_name: VLPCOR_POLICY, Command:  voice lpcor policy str_1_s
+Parent_m:configure, Mode:vm-integration, eol_name: config_ipks_vm_int_command, which_name: 0, Command:  vm-integration 
+Parent_m:configure, Mode:ephone-hunt, eol_name: config_ephone_hunt_top, which_name: EPHONE_HUNT_SEQUENTIAL, Command:  ephone-hunt 1 sequential 
+Parent_m:configure, Mode:ephone-template, eol_name: config_ephone_template_tag, which_name: 0, Command:  ephone-template 1 
+Parent_m:configure, Mode:ephone-dn-template, eol_name: config_ephone_dn_template_tag, which_name: 0, Command:  ephone-dn-template 1 
+Parent_m:configure, Mode:xml-transport, eol_name: xml_transport_command, which_name: 0, Command:  ixi transport http 
+Parent_m:configure, Mode:xml-app, eol_name: xml_app_command, which_name: 0, Command:  ixi application cme 
+Parent_m:configure, Mode:voice-register-fs, eol_name: config_voice_register_fs_tag, which_name: 0, Command:  voice register session-server 1 
+Parent_m:configure, Mode:voice-register-pool, eol_name: config_voice_register_pool_tag, which_name: 0, Command:  voice register pool 1 
+Parent_m:configure, Mode:voice-register-dn, eol_name: config_voice_register_dn_tag, which_name: 0, Command:  voice register dn 1 
+Parent_m:configure, Mode:voice-register-dialplan, eol_name: config_voice_register_dialplan_tag, which_name: 0, Command:  voice register dialplan 1 
+Parent_m:configure, Mode:voice-register-temp, eol_name: config_voice_register_temp_tag, which_name: 0, Command:  voice register template 1 
+Parent_m:configure, Mode:ipxsumnacl, eol_name: ipx_nacl_command, which_name: ACL_IPX_NAMED_SUMMARY, Command:  ipx access-list summary str_1_s 
+Parent_m:configure, Mode:ipxsapnacl, eol_name: ipx_nacl_command, which_name: ACL_IPX_NAMED_SAP, Command:  ipx access-list sap str_1_s 
+Parent_m:configure, Mode:cfg-bs-is-snmp, eol_name: bs_is_cmd, which_name: 0, Command:  bulkstat instance str_1_s type snmp 
+Parent_m:configure, Mode:nat64-provisioning, eol_name: nat64_cfg_command, which_name: NAT64_CFG_PROVISIONING, Command:  nat64 provisioning mode jp01 
+Parent_m:configure, Mode:voicecl-cptone, eol_name: voice_class_cptone_config_top, which_name: VOICE_CLASS_CUSTOM_CPTONE, Command:  voice class custom-cptone str_1_s 
+Parent_m:configure, Mode:xmpp-mgmt-agent, eol_name: xmpp_agent_cfg_command, which_name: PARSER_CFG_XMPP_MGMT, Command: xmpp agent mgmt
+Parent_m:configure, Mode:xep-init-config, eol_name: xmpp_initiator_cfg_command, which_name: 0, Command: xmpp profile initiator str_1_s
+Parent_m:configure, Mode:mplsmfistaticrewrite, eol_name: mfi_static_first_fpi_cmd, which_name: 0, Command:  mpls static ipv4 1.1.1.1 255.255.255.255 
+Parent_m:configure, Mode:uni, eol_name: ouni_lm_nbr_command, which_name: 0, Command:  mpls uni lmp neighbor name str_1_s
+Parent_m:configure, Mode:service-context, eol_name: service_controller_service_insertion_command, which_name: SERVICE_CONTEXT_CNAME, Command:  service-insertion service-context appqoe / 1 
+Parent_m:configure, Mode:iprbacl, eol_name: ip_nacl_command, which_name: ACL_IP_NAMED_ROLE_BASED, Command:  ip access-list role-based str_1_s 
+Parent_m:configure, Mode:ipxsnacl, eol_name: ipx_nacl_command, which_name: ACL_IPX_NAMED_SIMPLE, Command:  ipx access-list standard str_1_s
+Parent_m:configure, Mode:crypto-map-fail-close, eol_name: crypto_map_command, which_name: PARSER_CRYPTO_MAP_GLOBAL, Command:  crypto map str_1_s gdoi fail-close
+Parent_m:configure, Mode:crypto-ca-cert-chain, eol_name: crypto_ca_command, which_name: PARSER_CRYPTO_CA_CERT_CHAIN, Command:  crypto pki certificate chain str_1_s 
+Parent_m:configure, Mode:seczonepaircfg, eol_name: zone_pair_conf_command, which_name: CONF_ZONE_PAIR, Command:  zone-pair security str_1_s source str_1_s destination str_1_s
+Parent_m:configure, Mode:ephone-dn, eol_name: config_ephone_dn_tag, which_name: 0, Command:  ephone-dn 1 
+Parent_m:configure, Mode:ephone, eol_name: config_ephone_tag, which_name: 0, Command:  ephone 1 
+Parent_m:configure, Mode:mon-sess-type-rspan-src, eol_name: cfg_mon_sess_type_rspan_src_cmd, which_name: 0, Command:  monitor session 1 type rspan-source 
+Parent_m:configure, Mode:mon-sess-type-rspan-dst, eol_name: cfg_mon_sess_type_rspan_dst_cmd, which_name: 0, Command:  monitor session 1 type rspan-destination 
+Parent_m:configure, Mode:null-interface, eol_name: interface_command, which_name: 0, Command: int null 0
+Parent_m:configure, Mode:config-mdns-sd-si, eol_name: cfg_mdns_service_instance, which_name: 0, Command: Service-instance mdns-sd service abcd regtype a.3 domain a
+Parent_m:configure, Mode:ipxenacl, eol_name: ipx_nacl_command, which_name: ACL_IPX_NAMED_EXTENDED, Command:  ipx access-list extended str_1_s 
+Parent_m:configure, Mode:cm-ac, eol_name: conn_command, which_name: 0, Command: connect str_1_s GigabitEthernet1/0/3 GigabitEthernet1/0/4 
+Parent_m:configure, Mode:trunk-group, eol_name: tgrm_command, which_name: TG_CONFIG, Command:  trunk group 1 
+Parent_m:configure, Mode:voipdpcorlist, eol_name: dialpeer_config_cor_list, which_name: 0, Command:  dial-peer cor list str1
+Parent_m:configure, Mode:voice-uri-class, eol_name: vuri_cfg_command_top, which_name: VURI_CLASS_CONFIG, Command:  voice class uri str1 sip 
+Parent_m:configure, Mode:template_pw, eol_name: template_entry_command, which_name: 1, Command: template interface type pseudowire str_1_s
+Parent_m:configure, Mode:fqdn-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command: object-group fqdn str_1_s
+Parent_m:configure, Mode:geo-object-group, eol_name: conf_objectgroup_cmd, which_name: 0, Command: object-group geo str_1_s
+Parent_m:configure, Mode:config-otv-isis, eol_name: isisl2_otv_inst_command, which_name: OTV_ISIS_INST_NAME, Command: otv isis overlay 2
+Parent_m:configure, Mode:pcm-cap-profile, eol_name: pcmt_command, which_name: PCMT_CFG_CAP_PROFILE, Command:  monitor pcm-tracer profile 1
+Parent_m:configure, Mode:controller, eol_name: controller_command, which_name: 0, Command: controller SHDSL str_1_s
+Parent_m:controller, Mode:dsl-group-config-ea, eol_name: shdsl_dslgroup_cmd , which_name: SHDSL_DSLGROUP_CMD, Command: dsl-group auto
+Parent_m:utd-mt-global, Mode:utd-mt-file-analysis-global, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_ANALYSIS_GLOBAL, Command: file-analysis
+Parent_m:utd-multitenancy, Mode:utd-mt-file-inspection, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_INSPECTION_PROFILE, Command: file-inspection profile str_1_s
+Parent_m:utd-mt-global, Mode:utd-mt-file-rep-global, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_REPUTATION_GLOBAL, Command: file-reputation
+Parent_m:utd-multitenancy, Mode:utd-mt-file-rep-profile, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_REPUTATION_PROFILE, Command: file-reputation profile str_1_s
+Parent_m:utd-multitenancy, Mode:utd-mt-tls-decryption, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_PROFILE, Command: tls-decryption profile str_1_s
+Parent_m:utd-mt-tls-decryption, Mode:utd-mt-tls-decryption-blist, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_BLIST, Command: blacklist
+Parent_m:utd-mt-tls-decryption, Mode:utd-mt-tls-decryption-categ, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_CATEGORIES, Command: categories decrypt
+Parent_m:utd-mt-tls-decryption, Mode:utd-mt-tls-decryption-reput, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_REPUTATION, Command: reputation
+Parent_m:utd-mt-tls-decryption, Mode:utd-mt-tls-decryption-wlist, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_WLIST, Command: whitelist
+Parent_m:utd-multitenancy, Mode:utd-mt-file-analysis-profile, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_ANALYSIS_PROFILE, Command: file-analysis profile str_1_s
+Parent_m:configure, Mode:cm-fallback, eol_name: config_cm_fallback_command, which_name: 0, Command: call-manager-fallback
+Parent_m:configure, Mode:config-vlan, eol_name:cfg_vlan_command, which_name: 0, Command: vlan 1
+Parent_m:configure, Mode:voicecard, eol_name: voice_card_command, which_name: 0, Command: voice-card 0
+Parent_m:interface, Mode:vrrp-grp, eol_name: vrrp_mode_enter_command, which_name: 0, Command: vrrp 1 address-family
+Parent_m:configure, Mode:voice-service, eol_name: encap_service_cfg, which_name: ENCAP_VOFR, Command: voice service vofr
+Parent_m:configure, Mode:voice-service, eol_name: encap_service_cfg, which_name: ENCAP_VOICE, Command: voice service pots
+Parent_m:configure, Mode:voice-service, eol_name: encap_service_cfg, which_name: ENCAP_VOATM, Command: voice service voatm
+Parent_m:mediaclass, Mode:mediaclass-recorder, eol_name: conf_media_class, which_name: MEDIACLASS_CFG_RECORDER_PARAM_SIPREC, Command: recorder parameter siprec
+Parent_m:ospf-flex-algo, Mode:ospf-flex-algo-affinity, eol_name: ospf_fa_ui_set_affinity, which_name: OSPF_FLEX_ALGO_EXCL_ANY_CMD, Command: affinity exclude-any
+Parent_m:ospf-flex-algo, Mode:ospf-flex-algo-affinity, eol_name: ospf_fa_ui_set_affinity, which_name: OSPF_FLEX_ALGO_INCL_ANY_CMD, Command: affinity include-any
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-accelerated, eol_name: perf_measure_delprof_adv_acc_min_num_command, which_name: 0, Command: accelerated minimum-change 0
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-accelerated, eol_name: perf_measure_delprof_adv_acc_th_num_command, which_name: 0, Command: accelerated threshold 0
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-periodic, eol_name: perf_measure_delprof_adv_per_dis_command, which_name: 0, Command: periodic disabled
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-periodic, eol_name: perf_measure_delprof_adv_per_ivl_num_command, which_name: 0, Command: periodic interval 30
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-periodic, eol_name: perf_measure_delprof_adv_per_min_num_command, which_name: 0, Command: periodic minimum-change 0
+Parent_m:pm-delay-profile-advertisement, Mode:pm-delay-profile-advertisement-periodic, eol_name: perf_measure_delprof_adv_per_th_num_command, which_name: 0, Command: periodic threshold 0
+Parent_m:pm-delay-profile-probe, Mode:delay-profile-probe-protocol, eol_name: perf_measure_probe_protocol_mpls_command, which_name: 0, Command: protocol pm-mpls
+Parent_m:pm-delay-profile-probe, Mode:delay-profile-probe-protocol, eol_name: perf_measure_probe_protocol_twamp_command, which_name: 0, Command: protocol twamp-light
+Parent_m:pm-delay-profile-srpol-probe, Mode:delay-profile-srpol-probe-protocol, eol_name: perf_measure_probe_protocol_mpls_command_srpol, which_name: 0, Command: protocol pm-mpls
+Parent_m:pm-delay-profile-srpol-probe, Mode:delay-profile-srpol-probe-protocol, eol_name: perf_measure_probe_protocol_twamp_command_srpol, which_name: 0, Command: protocol twamp-light
+Parent_m:pm-delay-profile-srpol-probe, Mode:delay-profile-srpol-probe-sweep, eol_name: perf_measure_delprof_probe_sweep_dest_ipv4_range_command_srpol, which_name: 0, Command: sweep destination ipv4 1.1.1.1 range 0
+Parent_m:pm-interface, Mode:interface-delay, eol_name: perf_measure_interf_delay_adv_command, which_name: 0, Command: delay-measurement advertise-delay 0 
+Parent_m:pm-twamp-delay, Mode:pm-twamp-delay-unauth, eol_name: perf_measure_twamp_delay_unauth_port_command, which_name: 0, Command: unauthenticated querier-dst-port 1024
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_VOATM, Command: dial-peer voice 1 voatm
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_VOFR, Command: dial-peer voice 1 vofr
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_VOIP, Command: dial-peer voice 1 voip
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_VOIP_DEFAULT, Command: dial-peer voice 1 voip system
+Parent_m:configure, Mode:voipdialpeer, eol_name: dialpeer_config_top, which_name: DIALPEER_TYPE_MMOIP, Command: dial-peer voice 1 mmoip
+Parent_m:sbc-sbe, Mode:sbc-sbe-blacklist, eol_name: cfg_sbc_sbe_blacklist, which_name: CFG_SBC_SBE_BLACKLIST_ADDRESS_DEFAULT_IPV4, Command: blacklist critical vpn str_1_s address-default address-family ipv4
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_LOCAL_JITTER, Command: statistics lcl-jit
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_MEDIA_PACKET_DROPPED, Command: statistics mpd-pct
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_MEDIA_PACKET_LOST, Command: statistics mpl-pct 
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_MOS_CQE, Command: statistics mos-cqe
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_REMOTE_JITTER, Command: statistics rmt-jit
+Parent_m:sbc-sbe, Mode:sbc-sbe-stats, eol_name: cfg_sbc_sbe_statistics, which_name: CFG_SBC_SBE_STATISTICS_UNANSWERED_CALL_RATIO, Command: statistics ucr
+Parent_m:sr_xmcp_listen_cfg, Mode:sr_xmcp_listen_client_cfg, eol_name: sr_xmcp_cmds_eols, which_name: SR_CFG_XMCP_CLIENT_UNAUTH_CMD, Command: client unauthenticated
+Parent_m:configure, Mode:ipenacl, eol_name: ip_nacl_command, which_name: ACL_IP_EXTENDED, Command: ip access-list extended 101
+Parent_m:configure, Mode:ipsnacl, eol_name: ip_nacl_command, which_name: ACL_IP_SIMPLE, Command: ip access-list standard 11
+Parent_m:utd-unified-policy, Mode:utd-mt-policy, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_POLICY, Command: policy str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-webf-source-db, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_SOURCEDB, Command: web-filter sourcedb str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-web-fltr-url, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_URL, Command: web-filter url profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-web-fltr-block-urc, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_BLOCK, Command: web-filter block page profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-webf-block-srvr, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_NGFW_CMD_UTD_MT_WEB_FLTR_BLOCK_SERVER, Command: web-filter block local-server profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-whitelist-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_WHITELIST_PROFILE, Command: threat-inspection whitelist profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-threat-inspection-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_THREAT_PROFILE, Command: threat-inspection profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-global, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_GLOBAL, Command: utd global
+Parent_m:utd-unified-policy, Mode:utd-mt-file-inspection, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_INSPECTION_PROFILE, Command: file-inspection profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-file-rep-profile, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_REPUTATION_PROFILE, Command: file-reputation profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-tls-decryption, eol_name: mcprp_ngfw_utd_ssl_decrypt_command, which_name: MCPRP_CMD_UTD_SSL_DECRYPT_PROFILE, Command: tls-decryption profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-file-analysis-profile, eol_name: mcprp_ngfw_utd_file_inspection_command, which_name: MCPRP_CMD_UTD_FILE_ANALYSIS_PROFILE, Command: file-analysis profile str_1_s
+Parent_m:utd-unified-policy, Mode:utd-mt-custom-signature-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_CUSTOM_SIGNATURE_PROFILE, Command:  threat-inspection custom-signature profile str_1_s
+Parent_m:utd-multitenancy, Mode:utd-mt-custom-signature-profile, eol_name: mcprp_utd_eng_std_multitenancy_command, which_name: MCPRP_UTD_ENG_STD_MT_CUSTOM_SIGNATURE_PROFILE, Command:  threat-inspection custom-signature profile str_1_s
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SAF, Command:  voice class saf 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_CALLED_NUMBER_POOL, Command:  voice class called number pool 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_CALLED_NUMBER_OUTBOUND, Command:  voice class called number outbound 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_CALLED_NUMBER_INBOUND, Command:  voice class called number inbound 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_TLS_PROFILE, Command:  voice class tls-profile 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_TLS_CIPHER, Command:  voice class tls-cipher 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_CRYPTO, Command:  voice class srtp-crypto 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_RESOURCE, Command:  voice class resource-group 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_MLPP, Command:  voice class mlpp 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_DP_PROV_POLICY, Command:  voice class dial-peer provision-policy 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_OPTKEEP_PROF, Command:  voice class sip-options-keepalive 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SERVER_GROUP, Command:  voice class server-group 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_DP_GROUP, Command:  voice class dpg 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_E164_TRANS_INFO, Command:  voice class e164-translation 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_EPM, Command:  voice class e164-pattern-map 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_AAA, Command:  voice class aaa 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SIP_DSCP_PROFILE, Command:  voice class dscp-profile 5000 
+Parent_m:configure, Mode:voicecl-dt-detect, eol_name: voice_class_config_top, which_name: VOICE_CLASS_DUALTONE_DETECT, Command:  voice class dualtone-detect-params 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_BUSYOUT, Command:  voice class busyout 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SIP_COPY_LIST, Command:  voice class sip-copylist 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SIP_HDR_PASSTHRU_LIST, Command:  voice class sip-hdr-passthrulist 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SIP_EVENT_LIST, Command:  voice class sip-event-list 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_SIP_PROFILES, Command:  voice class sip-profiles 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_H323, Command:  voice class h323 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_PERM_CONN, Command:  voice class permanent 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_STUN_USAGE, Command:  voice class stun-usage 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_CODEC, Command:  voice class codec 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_MEDIA, Command:  voice class media 5000 
+Parent_m:configure, Mode:voiceclass, eol_name: voice_class_config_top, which_name: VOICE_CLASS_ROUTE_STRING, Command:  voice class route-string 5000
+Parent_m:configure, Mode:ipnat-pool, eol_name: ip_nat_command, which_name: IPNAT_POOL, Command:  ip nat pool str_1_s netmask 1.1.1.1 type match-host
+Parent_m:configure, Mode:flowexp, eol_name: flow_exp_submode_command, which_name: 0, Command:  flow exporter str_1_s
+Parent_m:configure, Mode:acct_mlist, eol_name: aaa_command, which_name: PARSER_ACCT_LIST, Command:  aaa accounting vrrs default
+Parent_m:configure, Mode:flowmon, eol_name: fnf_mon_submode_command, which_name: 0, Command:  flow monitor str_1_s
+Parent_m:configure, Mode:ipnat-pool, eol_name: ip_nat_command, which_name: IPNAT_POOL, Command:  ip nat pool str_1_s netmask 1.1.1.1 type match-host
+Parent_m:configure, Mode:filter-submode, eol_name: pre_cmap_control_extend_command_eol_func, which_name: 0, Command:  class-map type control subscriber match-all str_1_s
