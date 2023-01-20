@@ -1,0 +1,333 @@
+tbl_config_dialpeer_detectfax_0:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_dialpeer_config_fwd_digits_0:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 3 pots"
+tbl_dialpeer_preemption_command_DIALPEER_CONFIG_PREEMPTION_LEVEL:
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_DISCONNECT_PROG_IND_ENABLE: 
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_CALLPROC_PROG_IND_STRIP_ANY:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_CALLPROC_PROG_IND_STRIP:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_ALERT_PROG_IND_DISABLE:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_ALERT_PROG_IND_ENABLE:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_ALERT_PROG_IND_STRIP_ANY:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_ALERT_PROG_IND_STRIP:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_SETUP_PROG_IND_DISABLE:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_SETUP_PROG_IND_ENABLE:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "destination-pattern 8675309$"
+tbl_config_dialpeer_sessiontarget_DIALPEER_CONFIG_SESS_TARGET_TEST:
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_config_dialpeer_sessiontarget_DIALPEER_CONFIG_SESS_TARGET:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+
+tbl_config_dialpeer_tripl_command_DP_TRIPL_ADDR_FAM_COMMAND: 
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_config_dialpeer_tripl_command_DP_TRIPL_ADVERTISE_COMMAND:
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_config_dialpeer_dest_route_string_0:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_config_dialpeer_session_svrgrp_DIALPEER_CONFIG_SESS_SVRGRP:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_dialpeer_vc_callednum_config_command_DIALPEER_CONFIG_VC_CALLED_NUMBER_OUTBOUND: 
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_dialpeer_vc_callednum_config_command_DIALPEER_CONFIG_VC_CALLED_NUMBER_INBOUND: 
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_config_dialpeer_voip_maxbandwidth_0:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_config_accept_language_POTS_DIALPEER_ACCEPT_LANGUAGE:
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_configure_dialpeer_sip_map_respcode_proc_0:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_configure_dialpeer_sip_map_respcode_proc_SET_TO_SYSTEM:
+  -
+    Action: FUZZER_SAME_MODE
+    Commands:
+      - "session protocol sipv2"
+tbl_config_dp_sip_register_0:
+  -
+    Action: FUZZER_REPLACE_PARENT
+    Commands:
+      - "dial-peer voice 3 pots"
+tbl_reg_invoke_dpcli_paramdefine_0:
+  -
+    Action: FUZZER_ALL_INPUT
+    Commands:
+      - "paramspace str_1_s str_1_s"                                      
+      - "paramspace str_2_s str_1_s"                                         
+      - "paramspace str_2_s str_2_s"
+      - "paramspace RECAPP 1 str_1_s"
+      - "paramspace RECAPP 2 str_1_s"
+      - "paramspace RECAPP 2 str_2_s"
+      - "end"
+tbl_config_VoIP_rtp_payload_DP_IDB_ENCAPDATA_RTP_PAYLOAD_CODEC_VIDEO_H264:
+   -
+      Action: FUZZER_ALL_INPUT
+      Commands:
+      - "voice service voip"
+      - "allow-connections"
+      - "end"
+tbl_config_VoIP_dialpeer_dtmf_relay_DIALPEER_CONFIG_DTMF_RELAY:
+   -
+      Action: FUZZER_REPLACE_ALL
+      Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 11 voip"
+
+tbl_config_dialpeer_descr_0:
+   -
+      Action: FUZZER_REPLACE_ALL
+      Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer data 1073741823 pots"
+
+tbl_config_dialpeer_destinationpattern_DIALPEER_CONFIG_CALLED_NUMBER:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer data 1073741823 pots"
+  -
+   Action: FUZZER_ALL_INPUT
+   Commands:
+     - "incoming called-number [+91]"
+     - "incoming called-number [+92]"
+     - "end"
+tbl_config_dialpeer_destinationpattern_DIALPEER_CONFIG_DEST_PAT:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 1073741823 pots"
+  -
+    Action: FUZZER_ALL_INPUT
+    Commands:
+      - "destination-pattern [+91]"
+      - "destination-pattern [+92]"
+      - "end"
+
+tbl_config_dialpeer_did_0:
+   -
+      Action: FUZZER_REPLACE_ALL
+      Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer data 1073741823 pots"
+
+tbl_config_dialpeer_maxcons_0:
+   -
+      Action: FUZZER_REPLACE_ALL
+      Commands:
+      - "voice service voip"
+      - "allow-connections h323 to h323"
+      - "exit"
+      - "dial-peer data 1073741823 pots"
+
+tbl_config_dialpeer_prefix_DIALPEER_CONFIG_POTS_PREFIX:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections h323 to h323"
+      - "exit"
+      - "dial-peer data 1073741823 pots"
+  -
+    Action: FUZZER_ALL_INPUT
+    Commands:
+      - "prefix 111"
+      - "prefix 222"
+      - "end"
+
+tbl_config_dialpeer_rtcp_keepalive_0:
+   -
+      Action: FUZZER_REPLACE_ALL
+      Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 5 voip"
+
+tbl_config_dialpeer_prog_ind_DIALPEER_CONFIG_DISCONNECT_PROG_IND_DISABLE:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 5 voip"
+      - "progress_ind disconnect enable 8"
+tbl_config_dialpeer_codec_DIALPEER_CONFIG_CODEC:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 102 voip"
+
+tbl_dialpeer_config_answer_address_DIALPEER_CONFIG_ANSWER_ADDRESS:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 2 voip"
+  -
+    Action: FUZZER_ALL_INPUT
+    Commands:
+      - "answer-address +91"
+      - "answer-address +92"
+      - "end"
+tbl_config_dialpeer_shut_0:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 10 voip"
+tbl_config_dialpeer_settlecall_PARSE_SETTLE:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 102 voip"
+#      - "settle-call"
+tbl_config_dialpeer_sessiontransport_DIALPEER_CONFIG_SESS_TRANS:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 102 voip"
+tbl_config_dialpeer_sessionprotocol_DIALPEER_CONFIG_SESS_PROTO:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 102 voip"
+tbl_configure_dialpeer_rtp_ssrc_mux_proc_0:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 102 voip"
+tbl_dialpeer_config_pref_0:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 4 voip"
+tbl_regxrule_profile_cfg_command_REGXRULE_DP_CONFIG_PROFILE_NAME:
+  -
+    Action: FUZZER_REPLACE_ALL
+    Commands:
+      - "voice service voip"
+      - "allow-connections sip to sip"
+      - "exit"
+      - "dial-peer voice 5 voip"
+
+tbl_config_dialpeer_tripl_command_DP_CAPACITY_TIMER_COMMAND:
+  -
+    Action: FUZZER_GLOBAL_MODE
+    Commands:
+      - "voice service voip"
+      - "allow-connections  sip  to h323"
+      - "exit"
